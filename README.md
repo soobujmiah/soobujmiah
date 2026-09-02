@@ -1,6 +1,6 @@
 # Sobuj Miah
 
-**Independent Software & AI Systems Engineer** — on-device AI, Android, Linux, ARM64, and GPU/NPU acceleration.
+**Independent Software & AI Systems Engineer** | On-Device AI · Android · Linux · ARM64 · GPU/NPU
 
 I design, build, debug, and validate systems close to the hardware — mostly on Android and ARM64 Linux, with a focus on local LLM inference and native toolchain engineering. I'm self-taught, and I build entirely from an Android phone (Termux/PRoot Debian, no PC): every project here routes compilation and CI through GitHub Actions, and every hardware-dependent claim is checked against one physical reference device before I call it done.
 
