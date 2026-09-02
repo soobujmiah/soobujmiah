@@ -28,7 +28,7 @@ Every repository above documents what's **implemented and device-verified** sepa
 
 ## Currently
 
-Qualifying GPU/NPU acceleration paths (Vulkan on Adreno, Hexagon/QNN) against real hardware, and hardening the CI/release pipeline across these projects.
+Qualifying GPU/NPU acceleration paths (Vulkan on Adreno, Hexagon/QNN) against real hardware, and hardening the CI/release pipeline across these projects. Also building **[DocDr](https://github.com/soobujmiah/docdr)**, a mobile-first document workspace — early development, a clean rebuild of a document-generation approach proven in earlier work.
 
 ---
 
