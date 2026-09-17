@@ -50,6 +50,23 @@ Each repository documents what is **implemented and device-verified** separately
 - **Diagnosed, deliberately not shipped** — the Adreno Vulkan crash in LAI's GPU inference path: root-caused with symbols, then gated fail-closed to CPU rather than shipped half-working
 - **Experimental / in qualification** — GPU LLM acceleration (Vulkan on Adreno) and Qualcomm Hexagon/QNN NPU paths: treated as qualification gates, not shipped capabilities, until device evidence exists
 
+## Engineering Principles
+
+- **Evidence before claims** — separate implemented, measured, experimental, and planned work.
+- **Fail closed** — unsupported or unstable hardware paths stay gated instead of being presented as working.
+- **Phone-first is a constraint, not a slogan** — the development loop is designed around one Android device and remote heavy builds.
+- **Reproducibility matters** — source, build inputs, checksums, tests, and release artifacts should be traceable.
+- **Consent and auditability** — privileged Android automation is explicit, bounded, and logged.
+- **Offline resilience** — important workflows and artifacts should remain useful without a permanent network dependency.
+
+## Project Ecosystem
+
+<div align="center">
+  <img src="./assets/project-ecosystem.svg" alt="Project ecosystem: LAI, GGEN, ADT, Ternux, Songjog and DocDr around a phone-first engineering workflow" width="100%" />
+</div>
+
+The projects are separate systems with complementary roles: **LAI** focuses on local AI and Android automation; **ADT** provides native ARM64 development tooling; **Ternux** provides the Linux-on-Android environment; **GGEN** and **Songjog** turn the platform into user-facing applications; **DocDr** explores an offline document workspace. The common thread is the same build → deploy → measure → document loop.
+
 ## Tech Stack
 
 <div align="center">
@@ -79,7 +96,7 @@ Qualifying GPU/NPU acceleration paths (Vulkan on Adreno, Hexagon/QNN) against re
 
 <a href="https://github.com/soobujmiah"><img src="https://img.shields.io/badge/GitHub-163D27?style=for-the-badge&labelColor=163D27&color=163D27&logo=github&logoColor=4ade80" alt="GitHub"></a>&nbsp;<a href="https://soobujmiah.github.io"><img src="https://img.shields.io/badge/Portfolio-163D27?style=for-the-badge&labelColor=163D27&color=163D27&logo=googlechrome&logoColor=4ade80" alt="Portfolio"></a>&nbsp;<a href="https://linkedin.com/in/soobujmiah"><img src="https://img.shields.io/badge/LinkedIn-185C3A?style=for-the-badge&labelColor=185C3A&color=185C3A&logo=linkedin&logoColor=4ade80" alt="LinkedIn"></a><br>
 <a href="https://peerlist.io/soobujmiah"><img src="https://img.shields.io/badge/Peerlist-185C3A?style=for-the-badge&labelColor=185C3A&color=185C3A&logo=peerlist&logoColor=4ade80" alt="Peerlist"></a>&nbsp;<a href="https://producthunt.com/@soobujmiah"><img src="https://img.shields.io/badge/Product%20Hunt-0F5132?style=for-the-badge&labelColor=0F5132&color=0F5132&logo=producthunt&logoColor=4ade80" alt="Product Hunt"></a>&nbsp;<a href="https://huggingface.co/soobujmiah"><img src="https://img.shields.io/badge/Hugging%20Face-0F5132?style=for-the-badge&labelColor=0F5132&color=0F5132&logo=huggingface&logoColor=4ade80" alt="Hugging Face"></a><br>
-<a href="https://dev.to/soobujmiah"><img src="https://img.shields.io/badge/DEV.to-0F5132?style=for-the-badge&labelColor=0F5132&color=0F5132&logo=devdotto&logoColor=4ade80" alt="DEV.to"></a>&nbsp;<a href="https://hashnode.com/@soobujmiah"><img src="https://img.shields.io/badge/Hashnode-0F5132?style=for-the-badge&labelColor=0F5132&color=0F5132&logo=hashnode&logoColor=4ade80" alt="Hashnode"></a>&nbsp;<a href="https://medium.com/@soobujmiah"><img src="https://img.shields.io/badge/Medium-14532D?style=for-the-badge&labelColor=14532D&color=14532D&logo=medium&logoColor=4ade80" alt="Medium"></a><br>
+<a href="https://dev.to/soobujmiah"><img src="https://img.shields.io/badge/DEV.to-0F5132?style=for-the-badge&labelColor=0F5132&color=0F5132&logo=devdotio&logoColor=4ade80" alt="DEV.to"></a>&nbsp;<a href="https://hashnode.com/@soobujmiah"><img src="https://img.shields.io/badge/Hashnode-0F5132?style=for-the-badge&labelColor=0F5132&color=0F5132&logo=hashnode&logoColor=4ade80" alt="Hashnode"></a>&nbsp;<a href="https://medium.com/@soobujmiah"><img src="https://img.shields.io/badge/Medium-14532D?style=for-the-badge&labelColor=14532D&color=14532D&logo=medium&logoColor=4ade80" alt="Medium"></a><br>
 <a href="https://x.com/soobujmiah"><img src="https://img.shields.io/badge/X-14532D?style=for-the-badge&labelColor=14532D&color=14532D&logo=x&logoColor=4ade80" alt="X"></a>&nbsp;<a href="https://instagram.com/soobujmiah"><img src="https://img.shields.io/badge/Instagram-14532D?style=for-the-badge&labelColor=14532D&color=14532D&logo=instagram&logoColor=4ade80" alt="Instagram"></a>&nbsp;<a href="https://threads.net/@soobujmiah"><img src="https://img.shields.io/badge/Threads-14532D?style=for-the-badge&labelColor=14532D&color=14532D&logo=threads&logoColor=4ade80" alt="Threads"></a><br>
 <a href="https://facebook.com/soobujmiah"><img src="https://img.shields.io/badge/Facebook-14532D?style=for-the-badge&labelColor=14532D&color=14532D&logo=facebook&logoColor=4ade80" alt="Facebook"></a>&nbsp;<a href="https://youtube.com/@soobujmiah"><img src="https://img.shields.io/badge/YouTube-14532D?style=for-the-badge&labelColor=14532D&color=14532D&logo=youtube&logoColor=4ade80" alt="YouTube"></a>&nbsp;<a href="https://t.me/soobujmiah"><img src="https://img.shields.io/badge/Telegram-123F2A?style=for-the-badge&labelColor=123F2A&color=123F2A&logo=telegram&logoColor=4ade80" alt="Telegram"></a><br>
 <a href="https://wa.me/soobujmiah"><img src="https://img.shields.io/badge/WhatsApp-123F2A?style=for-the-badge&labelColor=123F2A&color=123F2A&logo=whatsapp&logoColor=4ade80" alt="WhatsApp"></a>&nbsp;<a href="https://about.me/soobujmiah"><img src="https://img.shields.io/badge/About.me-103521?style=for-the-badge&labelColor=103521&color=103521" alt="About.me"></a>
