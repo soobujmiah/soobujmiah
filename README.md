@@ -43,17 +43,12 @@ Each repository documents what is **implemented and device-verified** separately
 
 <div align="center">
 
-[![Kotlin](https://img.shields.io/badge/Kotlin-07150D?style=for-the-badge&logo=kotlin&logoColor=4ade80)](https://kotlinlang.org/) [![Dart](https://img.shields.io/badge/Dart-07150D?style=for-the-badge&logo=dart&logoColor=4ade80)](https://dart.dev/) [![Flutter](https://img.shields.io/badge/Flutter-07150D?style=for-the-badge&logo=flutter&logoColor=4ade80)](https://flutter.dev/) [![C%2B%2B](https://img.shields.io/badge/C%2B%2B-07150D?style=for-the-badge&logo=cplusplus&logoColor=4ade80)](https://isocpp.org/)
-
-[![Bash](https://img.shields.io/badge/Bash-07150D?style=for-the-badge&logo=gnubash&logoColor=4ade80)](https://www.gnu.org/software/bash/) [![Python](https://img.shields.io/badge/Python-07150D?style=for-the-badge&logo=python&logoColor=4ade80)](https://www.python.org/) [![CMake](https://img.shields.io/badge/CMake-07150D?style=for-the-badge&logo=cmake&logoColor=4ade80)](https://cmake.org/) [![Ninja](https://img.shields.io/badge/Ninja-07150D?style=for-the-badge&logo=ninja&logoColor=4ade80)](https://ninja-build.org/)
-
-[![Clang](https://img.shields.io/badge/Clang-07150D?style=for-the-badge&logo=llvm&logoColor=4ade80)](https://clang.llvm.org/) [![SQLite](https://img.shields.io/badge/SQLite-07150D?style=for-the-badge&logo=sqlite&logoColor=4ade80)](https://sqlite.org/) [![GGUF](https://img.shields.io/badge/GGUF-07150D?style=for-the-badge)](https://github.com/ggerganov/llama.cpp) [![llama.cpp](https://img.shields.io/badge/llama.cpp-07150D?style=for-the-badge)](https://github.com/ggerganov/llama.cpp)
-
-[![Vulkan](https://img.shields.io/badge/Vulkan-07150D?style=for-the-badge&logo=vulkan&logoColor=4ade80)](https://www.vulkan.org/) [![Turnip%20%2F%20Zink](https://img.shields.io/badge/Turnip%20%2F%20Zink-07150D?style=for-the-badge)](https://docs.mesa3d.org/drivers/freedreno.html) [![VirGL](https://img.shields.io/badge/VirGL-07150D?style=for-the-badge)](https://virgil3d.github.io/) [![Linux](https://img.shields.io/badge/Linux-07150D?style=for-the-badge&logo=linux&logoColor=4ade80)](https://www.linux.org/)
-
-[![Debian](https://img.shields.io/badge/Debian-07150D?style=for-the-badge&logo=debian&logoColor=4ade80)](https://www.debian.org/) [![Android](https://img.shields.io/badge/Android-07150D?style=for-the-badge&logo=android&logoColor=4ade80)](https://developer.android.com/) [![AOSP](https://img.shields.io/badge/AOSP-07150D?style=for-the-badge)](https://source.android.com/) [![GitHub%20Actions](https://img.shields.io/badge/GitHub%20Actions-07150D?style=for-the-badge&logo=githubactions&logoColor=4ade80)](https://github.com/features/actions)
-
-[![Git](https://img.shields.io/badge/Git-07150D?style=for-the-badge&logo=git&logoColor=4ade80)](https://git-scm.com/) [![Termux](https://img.shields.io/badge/Termux-07150D?style=for-the-badge&logo=termux&logoColor=4ade80)](https://termux.dev/) [![PRoot%20Debian](https://img.shields.io/badge/PRoot%20Debian-07150D?style=for-the-badge)](https://github.com/termux/proot-distro) [![Shizuku%20%2F%20Accessibility](https://img.shields.io/badge/Shizuku%20%2F%20Accessibility-07150D?style=for-the-badge)](https://shizuku.rikka.app/)
+[![Kotlin](https://img.shields.io/badge/Kotlin-07150D?style=for-the-badge&logo=kotlin&logoColor=4ade80)](https://kotlinlang.org/) [![Dart](https://img.shields.io/badge/Dart-07150D?style=for-the-badge&logo=dart&logoColor=4ade80)](https://dart.dev/) [![Flutter](https://img.shields.io/badge/Flutter-07150D?style=for-the-badge&logo=flutter&logoColor=4ade80)](https://flutter.dev/) [![C%2B%2B](https://img.shields.io/badge/C%2B%2B-07150D?style=for-the-badge&logo=cplusplus&logoColor=4ade80)](https://isocpp.org/)<br>
+[![Bash](https://img.shields.io/badge/Bash-07150D?style=for-the-badge&logo=gnubash&logoColor=4ade80)](https://www.gnu.org/software/bash/) [![Python](https://img.shields.io/badge/Python-07150D?style=for-the-badge&logo=python&logoColor=4ade80)](https://www.python.org/) [![CMake](https://img.shields.io/badge/CMake-07150D?style=for-the-badge&logo=cmake&logoColor=4ade80)](https://cmake.org/) [![Ninja](https://img.shields.io/badge/Ninja-07150D?style=for-the-badge&logo=cmake&logoColor=4ade80)](https://ninja-build.org/)<br>
+[![Clang](https://img.shields.io/badge/Clang-07150D?style=for-the-badge&logo=llvm&logoColor=4ade80)](https://clang.llvm.org/) [![SQLite](https://img.shields.io/badge/SQLite-07150D?style=for-the-badge&logo=sqlite&logoColor=4ade80)](https://sqlite.org/) [![GGUF](https://img.shields.io/badge/GGUF-07150D?style=for-the-badge&logo=huggingface&logoColor=4ade80)](https://github.com/ggerganov/llama.cpp) [![llama.cpp](https://img.shields.io/badge/llama.cpp-07150D?style=for-the-badge&logo=cplusplus&logoColor=4ade80)](https://github.com/ggerganov/llama.cpp)<br>
+[![Vulkan](https://img.shields.io/badge/Vulkan-07150D?style=for-the-badge&logo=vulkan&logoColor=4ade80)](https://www.vulkan.org/) [![Turnip%20%2F%20Zink](https://img.shields.io/badge/Turnip%20%2F%20Zink-07150D?style=for-the-badge&logo=vulkan&logoColor=4ade80)](https://docs.mesa3d.org/drivers/freedreno.html) [![VirGL](https://img.shields.io/badge/VirGL-07150D?style=for-the-badge&logo=opengl&logoColor=4ade80)](https://virgil3d.github.io/) [![Linux](https://img.shields.io/badge/Linux-07150D?style=for-the-badge&logo=linux&logoColor=4ade80)](https://www.linux.org/)<br>
+[![Debian](https://img.shields.io/badge/Debian-07150D?style=for-the-badge&logo=debian&logoColor=4ade80)](https://www.debian.org/) [![Android](https://img.shields.io/badge/Android-07150D?style=for-the-badge&logo=android&logoColor=4ade80)](https://developer.android.com/) [![AOSP](https://img.shields.io/badge/AOSP-07150D?style=for-the-badge&logo=android&logoColor=4ade80)](https://source.android.com/) [![GitHub%20Actions](https://img.shields.io/badge/GitHub%20Actions-07150D?style=for-the-badge&logo=githubactions&logoColor=4ade80)](https://github.com/features/actions)<br>
+[![Git](https://img.shields.io/badge/Git-07150D?style=for-the-badge&logo=git&logoColor=4ade80)](https://git-scm.com/) [![Termux](https://img.shields.io/badge/Termux-07150D?style=for-the-badge&logo=termux&logoColor=4ade80)](https://termux.dev/) [![PRoot%20Debian](https://img.shields.io/badge/PRoot%20Debian-07150D?style=for-the-badge&logo=debian&logoColor=4ade80)](https://github.com/termux/proot-distro) [![Shizuku%20%2F%20Accessibility](https://img.shields.io/badge/Shizuku%20%2F%20Accessibility-07150D?style=for-the-badge&logo=android&logoColor=4ade80)](https://shizuku.rikka.app/)
 
 </div>
 
@@ -68,31 +63,18 @@ Qualifying GPU/NPU acceleration paths (Vulkan on Adreno, Hexagon/QNN) against re
 ## Find Me Online
 
 <div align="center">
-
-**Core**
-
-[![GitHub](https://img.shields.io/badge/%20-163D27?style=for-the-badge&logo=github&logoColor=4ade80&logoSize=auto)](https://github.com/soobujmiah) [![Portfolio](https://img.shields.io/badge/%20-163D27?style=for-the-badge&logo=googlechrome&logoColor=4ade80&logoSize=auto)](https://soobujmiah.github.io)
-
-**Professional**
-
-[![LinkedIn](https://img.shields.io/badge/%20-185C3A?style=for-the-badge&logo=linkedin&logoColor=4ade80&logoSize=auto)](https://linkedin.com/in/soobujmiah) [![Peerlist](https://img.shields.io/badge/%20-185C3A?style=for-the-badge&logo=peerlist&logoColor=4ade80&logoSize=auto)](https://peerlist.io/soobujmiah) [![Product Hunt](https://img.shields.io/badge/%20-185C3A?style=for-the-badge&logo=producthunt&logoColor=4ade80&logoSize=auto)](https://producthunt.com/@soobujmiah)
-
-**AI / Developer**
-
-[![Hugging Face](https://img.shields.io/badge/%20-0F5132?style=for-the-badge&logo=huggingface&logoColor=4ade80&logoSize=auto)](https://huggingface.co/soobujmiah) [![DEV.to](https://img.shields.io/badge/%20-0F5132?style=for-the-badge&logo=devdotto&logoColor=4ade80&logoSize=auto)](https://dev.to/soobujmiah) [![Hashnode](https://img.shields.io/badge/%20-0F5132?style=for-the-badge&logo=hashnode&logoColor=4ade80&logoSize=auto)](https://hashnode.com/@soobujmiah) [![Medium](https://img.shields.io/badge/%20-0F5132?style=for-the-badge&logo=medium&logoColor=4ade80&logoSize=auto)](https://medium.com/@soobujmiah)
-
-**Social**
-
-[![X](https://img.shields.io/badge/%20-14532D?style=for-the-badge&logo=x&logoColor=4ade80&logoSize=auto)](https://x.com/soobujmiah) [![Instagram](https://img.shields.io/badge/%20-14532D?style=for-the-badge&logo=instagram&logoColor=4ade80&logoSize=auto)](https://instagram.com/soobujmiah) [![Threads](https://img.shields.io/badge/%20-14532D?style=for-the-badge&logo=threads&logoColor=4ade80&logoSize=auto)](https://threads.net/@soobujmiah) [![Facebook](https://img.shields.io/badge/%20-14532D?style=for-the-badge&logo=facebook&logoColor=4ade80&logoSize=auto)](https://facebook.com/soobujmiah) [![YouTube](https://img.shields.io/badge/%20-14532D?style=for-the-badge&logo=youtube&logoColor=4ade80&logoSize=auto)](https://youtube.com/@soobujmiah)
-
-**Direct**
-
-[![Telegram](https://img.shields.io/badge/%20-123F2A?style=for-the-badge&logo=telegram&logoColor=4ade80&logoSize=auto)](https://t.me/soobujmiah) [![WhatsApp](https://img.shields.io/badge/%20-123F2A?style=for-the-badge&logo=whatsapp&logoColor=4ade80&logoSize=auto)](https://wa.me/soobujmiah)
-
-**Personal**
-
-[![About.me](https://img.shields.io/badge/%20-103521?style=for-the-badge&logo=aboutdotme&logoColor=4ade80&logoSize=auto)](https://about.me/soobujmiah)
-
+<sub><b>Core</b></sub><br>
+<a href="https://github.com/soobujmiah"><img src="https://img.shields.io/badge/%20-163D27?style=for-the-badge&logo=github&logoColor=4ade80" alt="GitHub"></a>&nbsp;<a href="https://soobujmiah.github.io"><img src="https://img.shields.io/badge/%20-163D27?style=for-the-badge&logo=googlechrome&logoColor=4ade80" alt="Portfolio"></a><br><br>
+<sub><b>Professional</b></sub><br>
+<a href="https://linkedin.com/in/soobujmiah"><img src="https://img.shields.io/badge/%20-185C3A?style=for-the-badge&logo=linkedin&logoColor=4ade80" alt="LinkedIn"></a>&nbsp;<a href="https://peerlist.io/soobujmiah"><img src="https://img.shields.io/badge/%20-185C3A?style=for-the-badge&logo=peerlist&logoColor=4ade80" alt="Peerlist"></a>&nbsp;<a href="https://producthunt.com/@soobujmiah"><img src="https://img.shields.io/badge/%20-185C3A?style=for-the-badge&logo=producthunt&logoColor=4ade80" alt="Product Hunt"></a><br><br>
+<sub><b>AI / Developer</b></sub><br>
+<a href="https://huggingface.co/soobujmiah"><img src="https://img.shields.io/badge/%20-0F5132?style=for-the-badge&logo=huggingface&logoColor=4ade80" alt="Hugging Face"></a>&nbsp;<a href="https://dev.to/soobujmiah"><img src="https://img.shields.io/badge/%20-0F5132?style=for-the-badge&logo=devdotto&logoColor=4ade80" alt="DEV.to"></a>&nbsp;<a href="https://hashnode.com/@soobujmiah"><img src="https://img.shields.io/badge/%20-0F5132?style=for-the-badge&logo=hashnode&logoColor=4ade80" alt="Hashnode"></a>&nbsp;<a href="https://medium.com/@soobujmiah"><img src="https://img.shields.io/badge/%20-0F5132?style=for-the-badge&logo=medium&logoColor=4ade80" alt="Medium"></a><br><br>
+<sub><b>Social</b></sub><br>
+<a href="https://x.com/soobujmiah"><img src="https://img.shields.io/badge/%20-14532D?style=for-the-badge&logo=x&logoColor=4ade80" alt="X"></a>&nbsp;<a href="https://instagram.com/soobujmiah"><img src="https://img.shields.io/badge/%20-14532D?style=for-the-badge&logo=instagram&logoColor=4ade80" alt="Instagram"></a>&nbsp;<a href="https://threads.net/@soobujmiah"><img src="https://img.shields.io/badge/%20-14532D?style=for-the-badge&logo=threads&logoColor=4ade80" alt="Threads"></a>&nbsp;<a href="https://facebook.com/soobujmiah"><img src="https://img.shields.io/badge/%20-14532D?style=for-the-badge&logo=facebook&logoColor=4ade80" alt="Facebook"></a>&nbsp;<a href="https://youtube.com/@soobujmiah"><img src="https://img.shields.io/badge/%20-14532D?style=for-the-badge&logo=youtube&logoColor=4ade80" alt="YouTube"></a><br><br>
+<sub><b>Direct</b></sub><br>
+<a href="https://t.me/soobujmiah"><img src="https://img.shields.io/badge/%20-123F2A?style=for-the-badge&logo=telegram&logoColor=4ade80" alt="Telegram"></a>&nbsp;<a href="https://wa.me/soobujmiah"><img src="https://img.shields.io/badge/%20-123F2A?style=for-the-badge&logo=whatsapp&logoColor=4ade80" alt="WhatsApp"></a><br><br>
+<sub><b>Personal</b></sub><br>
+<a href="https://about.me/soobujmiah"><img src="https://img.shields.io/badge/%20-103521?style=for-the-badge&logo=aboutdotme&logoColor=4ade80" alt="About.me"></a>
 </div>
 
 ---
