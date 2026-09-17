@@ -1,9 +1,17 @@
+<div align="center">
+  <img src="./assets/profile-banner.svg" alt="Sobuj Miah — Independent Software & AI Systems Engineer" width="100%" />
+</div>
+
 # Sobuj Miah
 
-**Independent Software & AI Systems Engineer**
+**Independent Software & AI Systems Engineer**  
 On-Device AI · Android · ARM64 Linux · Native Tooling · Software Systems
 
 I build systems close to the hardware: local LLM inference on ARM devices, consent-bound Android automation, native toolchains compiled from AOSP source, and Linux desktops running on phones. Self-taught, and built entirely from an Android phone (Termux / PRoot Debian, no PC) — heavy compilation routes through GitHub Actions, and every hardware-dependent claim is checked against one physical reference device before I call it done.
+
+<div align="center">
+  <img src="./assets/profile-stats.svg" alt="Engineering telemetry: featured systems, documented tests, AOSP releases, canonical links and delivery loop" width="100%" />
+</div>
 
 ## What I Build
 
