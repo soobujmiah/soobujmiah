@@ -41,9 +41,17 @@ Each repository documents what is **implemented and device-verified** separately
 
 ## Tech Stack
 
-Only what the repositories above actually build with:
+<div align="center">
+
+[![Kotlin](https://img.shields.io/badge/Kotlin-07150D?style=flat-square&logo=kotlin&logoColor=4ade80)](https://kotlinlang.org/) [![Dart](https://img.shields.io/badge/Dart-07150D?style=flat-square&logo=dart&logoColor=4ade80)](https://dart.dev/) [![Flutter](https://img.shields.io/badge/Flutter-07150D?style=flat-square&logo=flutter&logoColor=4ade80)](https://flutter.dev/) [![C++](https://img.shields.io/badge/C%2B%2B-07150D?style=flat-square&logo=cplusplus&logoColor=4ade80)](https://isocpp.org/) [![Bash](https://img.shields.io/badge/Bash-07150D?style=flat-square&logo=gnubash&logoColor=4ade80)](https://www.gnu.org/software/bash/)
+
+[![Python](https://img.shields.io/badge/Python-07150D?style=flat-square&logo=python&logoColor=4ade80)](https://www.python.org/) [![CMake](https://img.shields.io/badge/CMake-07150D?style=flat-square&logo=cmake&logoColor=4ade80)](https://cmake.org/) [![SQLite](https://img.shields.io/badge/SQLite-07150D?style=flat-square&logo=sqlite&logoColor=4ade80)](https://sqlite.org/) [![Vulkan](https://img.shields.io/badge/Vulkan-07150D?style=flat-square&logo=vulkan&logoColor=4ade80)](https://www.vulkan.org/) [![Linux](https://img.shields.io/badge/Linux-07150D?style=flat-square&logo=linux&logoColor=4ade80)](https://www.linux.org/) [![Debian](https://img.shields.io/badge/Debian-07150D?style=flat-square&logo=debian&logoColor=4ade80)](https://www.debian.org/)
+
+[![Android](https://img.shields.io/badge/Android-07150D?style=flat-square&logo=android&logoColor=4ade80)](https://developer.android.com/) [![GitHub Actions](https://img.shields.io/badge/GitHub_Actions-07150D?style=flat-square&logo=githubactions&logoColor=4ade80)](https://github.com/features/actions) [![Git](https://img.shields.io/badge/Git-07150D?style=flat-square&logo=git&logoColor=4ade80)](https://git-scm.com/) [![Termux](https://img.shields.io/badge/Termux-07150D?style=flat-square&logo=termux&logoColor=4ade80)](https://termux.dev/)
 
 `Kotlin` · `Dart/Flutter` · `C++ (llama.cpp)` · `Bash` · `Python` · `CMake/Ninja/Clang` · `AOSP source builds` · `SQLite` · `GGUF/llama.cpp` · `Vulkan (Mesa Turnip, Zink)` · `VirGL` · `Shizuku/Accessibility` · `Termux + PRoot Debian` · `GitHub Actions CI/CD`
+
+</div>
 
 ## How I Work
 
@@ -55,12 +63,27 @@ Qualifying GPU/NPU acceleration paths (Vulkan on Adreno, Hexagon/QNN) against re
 
 ## Find Me Online
 
-- **Core** — [GitHub](https://github.com/soobujmiah) · [Portfolio](https://soobujmiah.github.io)
-- **Professional** — [LinkedIn](https://linkedin.com/in/soobujmiah) · [Peerlist](https://peerlist.io/soobujmiah) · [Product Hunt](https://producthunt.com/@soobujmiah)
-- **AI / Developer** — [Hugging Face](https://huggingface.co/soobujmiah) · [DEV.to](https://dev.to/soobujmiah) · [Hashnode](https://hashnode.com/@soobujmiah) · [Medium](https://medium.com/@soobujmiah)
-- **Social** — [X](https://x.com/soobujmiah) · [Instagram](https://instagram.com/soobujmiah) · [Threads](https://threads.net/@soobujmiah) · [Facebook](https://facebook.com/soobujmiah) · [YouTube](https://youtube.com/@soobujmiah)
-- **Direct** — [Telegram](https://t.me/soobujmiah) · [WhatsApp](https://wa.me/soobujmiah)
-- **Personal** — [About.me](https://about.me/soobujmiah)
+<div align="center">
+
+**Core**  
+[![GitHub](https://img.shields.io/badge/GitHub-050507?style=flat-square&logo=github&logoColor=4ade80&labelColor=050507&color=163D27)](https://github.com/soobujmiah) [![Portfolio](https://img.shields.io/badge/Portfolio-050507?style=flat-square&logo=googlechrome&logoColor=4ade80&labelColor=050507&color=163D27)](https://soobujmiah.github.io)
+
+**Professional**  
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-050507?style=flat-square&logo=linkedin&logoColor=4ade80&labelColor=050507&color=185C3A)](https://linkedin.com/in/soobujmiah) [![Peerlist](https://img.shields.io/badge/Peerlist-050507?style=flat-square&logo=peerlist&logoColor=4ade80&labelColor=050507&color=185C3A)](https://peerlist.io/soobujmiah) [![Product Hunt](https://img.shields.io/badge/Product_Hunt-050507?style=flat-square&logo=producthunt&logoColor=4ade80&labelColor=050507&color=185C3A)](https://producthunt.com/@soobujmiah)
+
+**AI / Developer**  
+[![Hugging Face](https://img.shields.io/badge/Hugging_Face-050507?style=flat-square&logo=huggingface&logoColor=4ade80&labelColor=050507&color=0F5132)](https://huggingface.co/soobujmiah) [![DEV.to](https://img.shields.io/badge/DEV.to-050507?style=flat-square&logo=devdotto&logoColor=4ade80&labelColor=050507&color=0F5132)](https://dev.to/soobujmiah) [![Hashnode](https://img.shields.io/badge/Hashnode-050507?style=flat-square&logo=hashnode&logoColor=4ade80&labelColor=050507&color=0F5132)](https://hashnode.com/@soobujmiah) [![Medium](https://img.shields.io/badge/Medium-050507?style=flat-square&logo=medium&logoColor=4ade80&labelColor=050507&color=0F5132)](https://medium.com/@soobujmiah)
+
+**Social**  
+[![X](https://img.shields.io/badge/X-050507?style=flat-square&logo=x&logoColor=4ade80&labelColor=050507&color=14532D)](https://x.com/soobujmiah) [![Instagram](https://img.shields.io/badge/Instagram-050507?style=flat-square&logo=instagram&logoColor=4ade80&labelColor=050507&color=14532D)](https://instagram.com/soobujmiah) [![Threads](https://img.shields.io/badge/Threads-050507?style=flat-square&logo=threads&logoColor=4ade80&labelColor=050507&color=14532D)](https://threads.net/@soobujmiah) [![Facebook](https://img.shields.io/badge/Facebook-050507?style=flat-square&logo=facebook&logoColor=4ade80&labelColor=050507&color=14532D)](https://facebook.com/soobujmiah) [![YouTube](https://img.shields.io/badge/YouTube-050507?style=flat-square&logo=youtube&logoColor=4ade80&labelColor=050507&color=14532D)](https://youtube.com/@soobujmiah)
+
+**Direct**  
+[![Telegram](https://img.shields.io/badge/Telegram-050507?style=flat-square&logo=telegram&logoColor=4ade80&labelColor=050507&color=123F2A)](https://t.me/soobujmiah) [![WhatsApp](https://img.shields.io/badge/WhatsApp-050507?style=flat-square&logo=whatsapp&logoColor=4ade80&labelColor=050507&color=123F2A)](https://wa.me/soobujmiah)
+
+**Personal**  
+[![About.me](https://img.shields.io/badge/About.me-050507?style=flat-square&logo=aboutdotme&logoColor=4ade80&labelColor=050507&color=103521)](https://about.me/soobujmiah)
+
+</div>
 
 ---
 
