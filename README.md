@@ -32,15 +32,24 @@ I build systems close to the hardware: local LLM inference on ARM devices, conse
 
 Practical technology and digital support for individuals, offices, and businesses — with the full service catalog available on the [Services page](https://soobujmiah.github.io/services/).
 
+## How I Can Help
+
+- **Build practical software** — Android applications, web products, business tools, and custom software shaped around real workflows.
+- **Work close to the device** — on-device AI, Android/Linux environments, ARM64 tooling, CI/release pipelines, and physical-device validation.
+- **Improve technology workflows** — automation, troubleshooting, documentation, deployment, and reproducible development setups for individuals, offices, and businesses.
+- **Deliver practical digital services** — website development, computer and Android support, business technology, graphics, office technology, and data work.
+- **Research under constraints** — investigate difficult device/runtime problems, separate verified results from experimental paths, and document what the evidence supports.
+
 ## Featured Work
 
 | Project | What it is | Engineering evidence |
 |---|---|---|
+| [Ternux](https://github.com/soobujmiah/ternux) <br> ![Ternux CI](https://github.com/soobujmiah/ternux/actions/workflows/ci.yml/badge.svg) | No-root Debian/Xfce Linux desktop on an Android phone | Zink/Turnip Vulkan and VirGL GPU routes; modular Bash installer with doctor/repair/benchmark tooling; glmark2 score 140 (OpenGL 4.6 via Zink) measured on device, with device evidence that separates measured results from untested claims |
+| [ADT](https://github.com/soobujmiah/adt) <br> ![ADT CI](https://github.com/soobujmiah/adt/actions/workflows/build.yml/badge.svg) | Native ARM64 Android development toolchain | Builds Android SDK build-tools/platform-tools from AOSP source for Linux ARM64/glibc (not only Android/Bionic); ships SHA-256-verified offline release artifacts; validates the full pipeline on real hardware — native source → APK → sign → install → JNI load → run · [v37.0.0](https://github.com/soobujmiah/adt/releases) |
 | [LAI](https://github.com/soobujmiah/lai) <br> ![LAI CI](https://github.com/soobujmiah/lai/actions/workflows/android_build.yml/badge.svg) | Bangla-first local AI + consent-driven Android automation runtime | Real arm64 llama.cpp CPU inference (GGUF, streaming, KV-prefix reuse) with device-measured throughput and TTFT; Shizuku/Accessibility consent boundaries with a hash-chained audit trail; symbolized root-cause diagnosis of an Adreno Vulkan driver crash (`vkCmdBindPipeline` SIGSEGV) that shaped a fail-closed CPU-default architecture · [v0.9.7](https://github.com/soobujmiah/lai/releases) |
 | [GGEN](https://github.com/soobujmiah/ggen) <br> ![GGEN core CI](https://github.com/soobujmiah/ggen/actions/workflows/core.yml/badge.svg) | Android-first creative & document studio (Flutter/Dart) | Pure-Dart core with 143 unit tests and a Flutter shell with 353 widget/controller tests; deterministic text-layout engine with a proven conservation invariant; transactional file persistence with SHA-256 receipts |
-| [ADT](https://github.com/soobujmiah/adt) <br> ![ADT CI](https://github.com/soobujmiah/adt/actions/workflows/build.yml/badge.svg) | Native ARM64 Android development toolchain | Builds Android SDK build-tools/platform-tools from AOSP source for Linux ARM64/glibc (not only Android/Bionic); ships SHA-256-verified offline release artifacts; validates the full pipeline on real hardware — native source → APK → sign → install → JNI load → run · [v37.0.0](https://github.com/soobujmiah/adt/releases) |
-| [Ternux](https://github.com/soobujmiah/ternux) <br> ![Ternux CI](https://github.com/soobujmiah/ternux/actions/workflows/ci.yml/badge.svg) | No-root Debian/Xfce Linux desktop on an Android phone | Zink/Turnip Vulkan and VirGL GPU routes; modular Bash installer with doctor/repair/benchmark tooling; glmark2 score 140 (OpenGL 4.6 via Zink) measured on device, with device evidence that separates measured results from untested claims |
 | [Songjog](https://github.com/soobujmiah/songjog) <br> ![Songjog CI](https://github.com/soobujmiah/songjog/actions/workflows/flutter-ci.yml/badge.svg) | Bangla-first business & institution operations app | Owner Edition: fast daily entry, local SQLite records, auditable corrections instead of destructive deletes; 94 tests green on CI; export/diagnostics validated on the physical reference device |
+| [OnSkillIT Platform](https://github.com/soobujmiah/onskillit-platform) | Product research and technical specification workspace for a digital platform | Phase-based product specification covering requirements, design system, architecture, data/API contracts, payments, security, SEO/content, quality gates, operations, pages, sitemap, roadmap, and traceability; currently documentation draft with no application implementation yet |
 
 ## Research & Engineering
 
@@ -88,7 +97,7 @@ Only the heavy build runs remotely, on GitHub Actions. Everything else — writi
 
 ## Currently
 
-Qualifying GPU/NPU acceleration paths (Vulkan on Adreno, Hexagon/QNN) against real hardware, hardening CI/release pipelines across these projects, and building [DocDr](https://github.com/soobujmiah/docdr) — a mobile-first offline document workspace, early development.
+Qualifying GPU/NPU acceleration paths (Vulkan on Adreno, Hexagon/QNN) against real hardware, hardening CI/release pipelines across these projects, building [DocDr](https://github.com/soobujmiah/docdr) — a mobile-first offline document workspace, early development — and developing the [OnSkillIT Digital Platform](https://github.com/soobujmiah/onskillit-platform) documentation and technical specification baseline.
 
 ## Find Me Online
 
