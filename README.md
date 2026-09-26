@@ -74,7 +74,7 @@ Each repository documents what is **implemented and device-verified** separately
   <img src="./assets/project-ecosystem.svg" alt="Project ecosystem: LAI, GGEN, ADT, Ternux, Songjog and DocDr around a phone-first engineering workflow" width="100%" />
 </div>
 
-The projects are separate systems with complementary roles: **LAI** focuses on local AI and Android automation; **ADT** provides native ARM64 development tooling; **Ternux** provides the Linux-on-Android environment; **GGEN** and **Songjog** turn the platform into user-facing applications; **DocDr** explores an offline document workspace. The common thread is the same build → deploy → measure → document loop.
+The projects are separate systems with complementary roles: **LAI** focuses on local AI and Android automation; **ADT** provides native ARM64 development tooling; **Ternux** provides the Linux-on-Android environment; **GGEN** and **Songjog** turn the platform into user-facing applications; **OnSkillIT** covers product research and technical specification for a digital platform. The common thread is the same build → deploy → measure → document loop.
 
 ## Tech Stack
 
@@ -97,7 +97,7 @@ Only the heavy build runs remotely, on GitHub Actions. Everything else — writi
 
 ## Currently
 
-Qualifying GPU/NPU acceleration paths (Vulkan on Adreno, Hexagon/QNN) against real hardware, hardening CI/release pipelines across these projects, building [DocDr](https://github.com/soobujmiah/docdr) — a mobile-first offline document workspace, early development — and developing the [OnSkillIT Digital Platform](https://github.com/soobujmiah/onskillit-platform) documentation and technical specification baseline.
+Qualifying GPU/NPU acceleration paths (Vulkan on Adreno, Hexagon/QNN) against real hardware, hardening CI/release pipelines across these projects, continuing development of [Songjog](https://github.com/soobujmiah/songjog), and developing the [OnSkillIT Digital Platform](https://github.com/soobujmiah/onskillit-platform) documentation and technical specification baseline.
 
 ## Find Me Online
 
