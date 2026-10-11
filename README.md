@@ -13,15 +13,15 @@ I am a self-taught software and technology builder based in Dhaka, Bangladesh. I
   <img src="./assets/profile-capabilities.svg?v=1" alt="Capability map: engineering, web and digital services, device support, and office and digital operations" width="100%" />
 </div>
 
-## What I Build
+## Engineering & Services
 
-- **On-device AI runtimes** — llama.cpp-based local inference on ARM64 Android: GGUF models, streaming, KV-prefix reuse, model-integrity verification, CPU/GPU backend routing
-- **Consent-driven Android automation** — Accessibility and Shizuku privileged execution behind explicit user consent, with a hash-chained audit trail
-- **Native ARM64 toolchains** — Android SDK build-tools and platform-tools built from AOSP source for Linux ARM64/glibc, shipped as SHA-256-verified offline artifacts
-- **Linux on Android** — no-root Debian/Xfce desktops with real GPU routes (Zink/Turnip Vulkan, VirGL) and doctor/repair/benchmark tooling
-- **Bangla-first applications** — business ledger and document tools where Bengali is the primary language, not a translation layer
+I work across software engineering and practical technology services, from low-level Android/Linux systems to websites, device support, and office workflows.
 
-## Professional & Practical Services
+- **Software & AI systems** — on-device LLM inference, Android applications, consent-aware automation, Bangla-first business tools, and document software.
+- **Android & ARM64 Linux** — no-root Linux environments, native Android tooling, GPU/graphics qualification, and device-level troubleshooting.
+- **Build, delivery & documentation** — Git and GitHub CLI, language-specific toolchains, CI/CD, ADB-based device workflows, release artifacts, testing, and technical documentation.
+- **Web & digital services** — website design and development, custom software and mobile apps, SEO, graphics, and business technology.
+- **Technical & office support** — computer and Android support, office administration, data entry and data work, and digital workflow improvement.
 
 <div align="center">
 
@@ -30,16 +30,8 @@ I am a self-taught software and technology builder based in Dhaka, Bangladesh. I
 
 </div>
 
-I also support practical technology and operational work beyond software engineering: website and web design, custom software and mobile apps, SEO, computer and Android troubleshooting, graphics, business technology, office administration, and data work. The portfolio’s [Services page](https://soobujmiah.github.io/services/) has the service details.
-
-## Scope of Work
-
-- **Engineering:** on-device AI, Android/Linux systems, ARM64 tooling, build and release pipelines, and hardware validation.
-- **Digital services:** web design and development, custom software, mobile apps, SEO, and graphics.
-- **Technical support:** computer and Android setup, troubleshooting, and workflow improvement.
-- **Office and business support:** administration, data work, documentation, and technology-assisted processes.
-- **Research:** reproduce difficult problems, test hypotheses, and label results by the strength of the evidence.
-
+Explore the full [Services catalogue](https://soobujmiah.github.io/services/).
+ 
 ## Featured Work
 
 <!-- PROFILE_PROJECTS:BEGIN -->
@@ -72,10 +64,10 @@ Each repository documents what is **implemented and device-verified** separately
 ## Project Ecosystem
 
 <div align="center">
-  <img src="./assets/project-ecosystem.svg?v=5" alt="Development environment map: Ternux workspace, multi-tool workbench including ADT, GitHub CLI, build tools and AI agents, and the connected LAI, GGEN and Songjog projects" width="100%" />
+  <img src="./assets/project-ecosystem.svg?v=5" alt="Development environment map: Ternux workspace, multi-tool workbench, and LAI, GGEN and Songjog project workflows" width="100%" />
 </div>
 
-**Ternux** is the primary Termux/PRoot workspace. **ADT** is one specialized toolchain used there for Android build, install, and debug work—not the entire toolset. The wider workbench also includes Git and GitHub CLI, language/build tools, GitHub Actions, diagnostics, and task-specific AI agents. **LAI**, **GGEN**, and **Songjog** use relevant parts of this environment; shared tooling does not imply that all three are connected through one automated pipeline.
+**Ternux** is the primary Termux/PRoot workspace. The workbench brings together **ADT + ADB**, **Git and GitHub CLI**, language-specific build tools, **GitHub Actions**, diagnostics, and AI agents for implementation, review, and research. **LAI**, **GGEN**, and **Songjog** are distinct applications developed with the tools suited to each project.
 
 ## Tools & Technologies
 
@@ -94,7 +86,7 @@ Each repository documents what is **implemented and device-verified** separately
 
 ## How I Work
 
-The primary workspace is Termux + PRoot Debian on Android. Depending on the task, I use Git/GitHub CLI for repository work, language-specific tools and build systems, AI agents for scoped implementation or research, and GitHub Actions for heavy or reproducible builds. Where a project needs device validation, I retrieve the artifact, install or exercise it on the reference device, inspect failures, then fix → rebuild → redeploy → retest. Not every project uses every tool or shares one automated pipeline.
+My primary workspace is Termux + PRoot Debian on Android. The workflow brings together Git and GitHub CLI, project-specific language and build tools, AI-assisted implementation and research, and GitHub Actions for repeatable builds. For device-focused work, I install and exercise builds on the reference device, investigate results, and iterate through fixes, rebuilds, and retesting.
 
 ## Currently
 
