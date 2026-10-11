@@ -4,18 +4,18 @@
   <style>
     @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Instrument+Serif&amp;family=JetBrains+Mono:wght@400;500;600&amp;display=swap');
     .ui{font-family:Inter,Arial,sans-serif}.display{font-family:'Instrument Serif',Georgia,serif}.mono{font-family:'JetBrains Mono',monospace}
-    .flow{fill:none;stroke:url(#signal);stroke-width:2.4;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:6 12;animation:flow 8s linear infinite}
-    .f2{animation-duration:10s;animation-direction:reverse}.f3{animation-duration:12s;animation-delay:-3s}.f4{animation-duration:9s;animation-delay:-5s}.f5{animation-duration:14s;animation-direction:reverse}
-    .pulse{transform-box:fill-box;transform-origin:center;animation:pulse 3.8s ease-in-out infinite}.p2{animation-delay:-1.1s}.p3{animation-delay:-2.2s}.p4{animation-delay:-.55s}
-    .scan{animation:scan 9s cubic-bezier(.4,0,.25,1) infinite}
-    .glint{animation:glint 7s ease-in-out infinite}
-    .orbit{transform-origin:800px 292px;animation:orbit 26s linear infinite}
+    .flow{fill:none;stroke:url(#signal);stroke-width:2.4;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:4 16;animation:flow 14s linear infinite}
+    .f2{animation-duration:18s;animation-direction:reverse}.f3{animation-duration:22s;animation-delay:-3s}.f4{animation-duration:20s;animation-delay:-5s}.f5{animation-duration:24s;animation-direction:reverse}
+    .pulse{transform-box:fill-box;transform-origin:center;animation:pulse 4.8s ease-in-out infinite}.p2{animation-delay:-1.1s}.p3{animation-delay:-2.2s}.p4{animation-delay:-.55s}
+    
+    
+    .orbit{transform-origin:800px 292px;animation:orbit 34s linear infinite}
     @keyframes flow{to{stroke-dashoffset:-216}}
     @keyframes pulse{0%,100%{opacity:.4;transform:scale(.78)}45%,60%{opacity:1;transform:scale(1.2)}}
-    @keyframes scan{0%,10%{transform:translateY(-90px);opacity:0}22%{opacity:.55}55%{opacity:.15}82%,100%{transform:translateY(950px);opacity:0}}
-    @keyframes glint{0%,20%{transform:translateX(-1100px);opacity:0}38%{opacity:.4}65%,100%{transform:translateX(1700px);opacity:0}}
+    
+    
     @keyframes orbit{to{transform:rotate(360deg)}}
-    @media(prefers-reduced-motion:reduce){.flow,.pulse,.scan,.glint,.orbit{animation:none}}
+    @media(prefers-reduced-motion:reduce){.flow,.pulse,.orbit{animation:none}}
   </style>
   <defs>
     <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#050507"/><stop offset=".4" stop-color="#07150D"/><stop offset=".72" stop-color="#06110B"/><stop offset="1" stop-color="#050507"/></linearGradient>
@@ -73,8 +73,8 @@
     <text x="64" y="824" class="mono" font-size="10" font-weight="600" letter-spacing="2" fill="#4ade80">ENGINEERING CYCLE</text>
     <g class="mono" font-size="10" fill="#e4e2df" fill-opacity=".78"><text x="80" y="856">IMPLEMENT</text><text x="330" y="856">BUILD / CI</text><text x="580" y="856">DEPLOY</text><text x="830" y="856">DEVICE TEST</text><text x="1080" y="856">DEBUG</text><text x="1330" y="856">DOCUMENT</text></g>
     <path class="flow f2" d="M80 872H1504"/>
-    <path class="scan" d="M64 0H1536V2H64Z" fill="#b7ffd2" opacity=".55"/>
-    <rect class="glint" x="-1100" y="150" width="240" height="650" fill="url(#glint-fill)" opacity=".14"/>
+    
+    
     <rect x="1" y="1" width="1598" height="928" rx="26" fill="none" stroke="#e4e2df" stroke-opacity=".17"/>
   </g>
 </svg>

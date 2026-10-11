@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="./assets/profile-banner.svg?v=6" alt="Sobuj Miah — Independent Software & AI Systems Engineer" width="100%" />
+  <img src="./assets/profile-banner.svg?v=7" alt="Sobuj Miah — Independent Software & AI Systems Engineer" width="100%" />
 </div>
 
 # Sobuj Miah
@@ -10,7 +10,7 @@ On-Device AI · Android · ARM64 Linux · Native Tooling · Software Systems
 I am a self-taught software and technology builder based in Dhaka, Bangladesh. I build on-device AI, Android software, ARM64 Linux environments, native tooling and automation—primarily from an Android phone using Termux and PRoot Debian, with GitHub Actions for heavy builds. Alongside independent engineering, I also do practical web/software work, computer and Android support, and office and digital administration for real-world workflows. I separate device-verified results from experimental work.
 
 <div align="center">
-  <img src="./assets/profile-capabilities.svg?v=2" alt="Capability map: engineering, web and digital services, device support, and office and digital operations" width="100%" />
+  <img src="./assets/profile-capabilities.svg?v=3" alt="Capability map: engineering, web and digital services, device support, and office and digital operations" width="100%" />
 </div>
 
 ## Engineering & Services
@@ -64,7 +64,7 @@ Each repository documents what is **implemented and device-verified** separately
 ## Project Ecosystem
 
 <div align="center">
-  <img src="./assets/project-ecosystem.svg?v=6" alt="Development environment map: Ternux workspace, multi-tool workbench, and LAI, GGEN and Songjog project workflows" width="100%" />
+  <img src="./assets/project-ecosystem.svg?v=7" alt="Development environment map: Ternux workspace, multi-tool workbench, and LAI, GGEN and Songjog project workflows" width="100%" />
 </div>
 
 **Ternux** is the primary Termux/PRoot workspace. The workbench brings together **ADT + ADB**, **Git and GitHub CLI**, language-specific build tools, **GitHub Actions**, diagnostics, and AI agents for implementation, review, and research. **LAI**, **GGEN**, and **Songjog** are distinct applications developed with the tools suited to each project.
