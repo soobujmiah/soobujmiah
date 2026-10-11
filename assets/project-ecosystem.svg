@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" role="img" aria-labelledby="title desc">
   <title id="title">Sobuj Miah — Project ecosystem and development environment</title>
-  <desc id="desc">Ternux is the primary Termux and PRoot workspace. A multi-tool workbench inside it includes ADT and ADB, Git and GitHub CLI, language/build tools, GitHub Actions, and task-specific AI agents. The projects LAI, GGEN, and Songjog use relevant parts of this environment. Lines represent workflow paths, not a claim that all projects are integrated into one automated pipeline.</desc>
+  <desc id="desc">Ternux is the primary Termux and PRoot workspace. A multi-tool workbench inside it includes ADT and ADB, Git and GitHub CLI, language/build tools, GitHub Actions, and task-specific AI agents. The projects LAI, GGEN, and Songjog use relevant parts of this environment. Connected routes show the shared development environment and project work paths.</desc>
   <style>
     .flow{fill:none;stroke:#4ade80;stroke-width:2.2;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:7 12;animation:flow-travel 10s linear infinite}
     .flow.f2{animation-delay:-2s}.flow.f3{animation-delay:-4s}.flow.f4{animation-delay:-6s}.flow.f5{animation-delay:-8s}
@@ -35,14 +35,14 @@
   <path class="flow" d="M800 267V309" stroke="url(#link)" marker-end="url(#arrow)"/>
   <text x="822" y="293" font-family="JetBrains Mono,monospace" font-size="9.5" fill="#4ade80" fill-opacity=".82">TOOLS CHOSEN PER TASK</text>
 
-  <!-- Tooling layer: ADT is one component, not the entire toolchain. -->
+  <!-- Multi-tool development workbench. -->
   <rect class="card" x="80" y="310" width="1440" height="190" rx="15"/>
   <text x="108" y="341" font-family="JetBrains Mono,monospace" font-size="10" font-weight="700" letter-spacing="2" fill="#4ade80">02 / MULTI-TOOL WORKBENCH</text>
   <g font-family="Inter,Arial,sans-serif">
-    <g><rect x="108" y="361" width="320" height="88" rx="10" fill="#07150D" stroke="#4ade80" stroke-opacity=".3"/><text x="126" y="386" font-size="15" font-weight="600" fill="#e4e2df">ADT + ADB</text><text x="126" y="409" font-size="11" fill="#e4e2df" fill-opacity=".64">Android build / install / debug</text><text x="126" y="430" font-size="10" fill="#4ade80">A TOOLCHAIN, NOT THE WHOLE WORKFLOW</text></g>
+    <g><rect x="108" y="361" width="320" height="88" rx="10" fill="#07150D" stroke="#4ade80" stroke-opacity=".3"/><text x="126" y="386" font-size="15" font-weight="600" fill="#e4e2df">ADT + ADB</text><text x="126" y="409" font-size="11" fill="#e4e2df" fill-opacity=".64">Android build / install / debug</text><text x="126" y="430" font-size="10" fill="#4ade80">ANDROID DEVELOPMENT TOOLING</text></g>
     <g><rect x="448" y="361" width="320" height="88" rx="10" fill="#07150D" stroke="#4ade80" stroke-opacity=".22"/><text x="466" y="386" font-size="15" font-weight="600" fill="#e4e2df">Git + GitHub CLI</text><text x="466" y="409" font-size="11" fill="#e4e2df" fill-opacity=".64">Source control · PRs · issues · releases</text><text x="466" y="430" font-size="10" fill="#4ade80">VERSION / REPOSITORY OPERATIONS</text></g>
     <g><rect x="788" y="361" width="320" height="88" rx="10" fill="#07150D" stroke="#4ade80" stroke-opacity=".22"/><text x="806" y="386" font-size="15" font-weight="600" fill="#e4e2df">Build + language tools</text><text x="806" y="409" font-size="11" fill="#e4e2df" fill-opacity=".64">Clang · CMake · Ninja · Flutter / Dart</text><text x="806" y="430" font-size="10" fill="#4ade80">SELECTED BY PROJECT NEED</text></g>
-    <g><rect x="1128" y="361" width="364" height="88" rx="10" fill="#07150D" stroke="#4ade80" stroke-opacity=".22"/><text x="1146" y="386" font-size="15" font-weight="600" fill="#e4e2df">CI + task-specific agents</text><text x="1146" y="409" font-size="11" fill="#e4e2df" fill-opacity=".64">GitHub Actions · AI agents · review / research</text><text x="1146" y="430" font-size="10" fill="#4ade80">ASSISTED, NOT ASSUMED AUTOMATIC</text></g>
+    <g><rect x="1128" y="361" width="364" height="88" rx="10" fill="#07150D" stroke="#4ade80" stroke-opacity=".22"/><text x="1146" y="386" font-size="15" font-weight="600" fill="#e4e2df">CI + AI engineering tools</text><text x="1146" y="409" font-size="11" fill="#e4e2df" fill-opacity=".64">GitHub Actions · implementation · review · research</text><text x="1146" y="430" font-size="10" fill="#4ade80">ENGINEERING + RESEARCH WORKFLOWS</text></g>
   </g>
   <text x="108" y="478" font-family="Inter,Arial,sans-serif" font-size="11" fill="#e4e2df" fill-opacity=".48">Other utilities and diagnostics are selected as needed; not every tool is used by every project.</text>
 
@@ -62,6 +62,6 @@
   <g font-family="JetBrains Mono,monospace" font-size="10" fill="#e4e2df" fill-opacity=".62" text-anchor="middle">
     <text x="200" y="774">EDIT / IMPLEMENT</text><text x="440" y="774">BUILD / CI</text><text x="680" y="774">DEPLOY</text><text x="920" y="774">DEVICE TEST</text><text x="1160" y="774">DEBUG</text><text x="1400" y="774">DOCUMENT</text>
   </g>
-  <text x="800" y="827" text-anchor="middle" font-family="Inter,Arial,sans-serif" font-size="12" fill="#e4e2df" fill-opacity=".44">Build → observe → fix → rebuild → retest. Evidence belongs to each project; integration is claimed only when demonstrated.</text>
+  <text x="800" y="827" text-anchor="middle" font-family="Inter,Arial,sans-serif" font-size="12" fill="#e4e2df" fill-opacity=".44">Build → test → learn → improve → deliver.</text>
   <rect x="1" y="1" width="1598" height="898" rx="24" fill="none" stroke="#e4e2df" stroke-opacity=".1"/>
 </svg>
