@@ -1,80 +1,67 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 700" role="img" aria-labelledby="title desc">
-  <title id="title">Sobuj Miah — Project ecosystem</title>
-  <desc id="desc">A top-down dependency map. Ternux is the primary phone-based workspace, ADT is the native ARM64 toolchain used from that workspace, and LAI, GGEN, and Songjog are the downstream application projects. Every downstream project has a visible connector to the toolchain route.</desc>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" role="img" aria-labelledby="title desc">
+  <title id="title">Sobuj Miah — Project ecosystem and development environment</title>
+  <desc id="desc">Ternux is the primary Termux and PRoot workspace. A multi-tool workbench inside it includes ADT and ADB, Git and GitHub CLI, language/build tools, GitHub Actions, and task-specific AI agents. The projects LAI, GGEN, and Songjog use relevant parts of this environment. Lines represent workflow paths, not a claim that all projects are integrated into one automated pipeline.</desc>
   <style>
-    .flow{fill:none;stroke:#4ade80;stroke-width:2.4;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:7 11;animation:flow-down 8s linear infinite}
-    .flow.delay-1{animation-delay:-1.6s}.flow.delay-2{animation-delay:-3.2s}.flow.delay-3{animation-delay:-4.8s}.flow.delay-4{animation-delay:-6.4s}
-    .card{fill:#060907;stroke:#4ade80;stroke-opacity:.32;stroke-width:1.4}
-    .accent{fill:#4ade80;fill-opacity:.9}
-    @keyframes flow-down{to{stroke-dashoffset:-180}}
-    @media (prefers-reduced-motion:reduce){.flow{animation:none}}
+    .flow{fill:none;stroke:#4ade80;stroke-width:2.2;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:7 12;animation:flow-travel 10s linear infinite}
+    .flow.f2{animation-delay:-2s}.flow.f3{animation-delay:-4s}.flow.f4{animation-delay:-6s}.flow.f5{animation-delay:-8s}
+    .card{fill:#060706;fill-opacity:.92;stroke:#4ade80;stroke-opacity:.3;stroke-width:1.3}
+    @keyframes flow-travel{to{stroke-dashoffset:-190}}
+    @media(prefers-reduced-motion:reduce){.flow{animation:none}}
   </style>
   <defs>
-    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#050507"/><stop offset=".52" stop-color="#07150D"/><stop offset="1" stop-color="#050507"/></linearGradient>
-    <linearGradient id="link" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#10b981" stop-opacity=".4"/><stop offset=".5" stop-color="#4ade80" stop-opacity=".95"/><stop offset="1" stop-color="#10b981" stop-opacity=".55"/></linearGradient>
-    <radialGradient id="glow" cx="50%" cy="50%" r="50%"><stop stop-color="#22c55e" stop-opacity=".14"/><stop offset="1" stop-color="#22c55e" stop-opacity="0"/></radialGradient>
-    <pattern id="grid" width="56" height="56" patternUnits="userSpaceOnUse"><path d="M56 0H0V56" fill="none" stroke="#e4e2df" stroke-opacity=".028"/></pattern>
-    <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10Z" fill="#4ade80"/></marker>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#050507"/><stop offset=".54" stop-color="#07150D"/><stop offset="1" stop-color="#050507"/></linearGradient>
+    <linearGradient id="link" x1="0" y1="0" x2="1" y2="0"><stop stop-color="#10b981" stop-opacity=".25"/><stop offset=".5" stop-color="#4ade80" stop-opacity=".85"/><stop offset="1" stop-color="#10b981" stop-opacity=".25"/></linearGradient>
+    <radialGradient id="glow"><stop stop-color="#22c55e" stop-opacity=".14"/><stop offset="1" stop-color="#22c55e" stop-opacity="0"/></radialGradient>
+    <pattern id="grid" width="56" height="56" patternUnits="userSpaceOnUse"><path d="M56 0H0V56" fill="none" stroke="#e4e2df" stroke-opacity=".027"/></pattern>
+    <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path d="M0 0L10 5L0 10Z" fill="#4ade80"/></marker>
   </defs>
-  <rect width="1600" height="700" rx="26" fill="url(#bg)"/>
-  <rect width="1600" height="700" rx="26" fill="url(#grid)"/>
-  <ellipse cx="800" cy="350" rx="560" ry="320" fill="url(#glow)"/>
-
-  <g font-family="JetBrains Mono,monospace">
-    <text x="64" y="58" font-size="14" font-weight="700" letter-spacing="3" fill="#4ade80">PROJECT ECOSYSTEM / DEPENDENCY MAP</text>
-    <text x="64" y="86" font-size="12" fill="#e4e2df" fill-opacity=".6">WORKSPACE → TOOLCHAIN → APPLICATION PROJECTS</text>
+  <rect width="1600" height="900" rx="24" fill="url(#bg)"/><rect width="1600" height="900" rx="24" fill="url(#grid)"/><ellipse cx="800" cy="410" rx="660" ry="400" fill="url(#glow)"/>
+  <g font-family="Inter,Arial,sans-serif">
+    <text x="64" y="56" font-family="JetBrains Mono,monospace" font-size="12" font-weight="700" letter-spacing="2.8" fill="#4ade80">PROJECT ECOSYSTEM / DEVELOPMENT ENVIRONMENT</text>
+    <text x="64" y="91" font-family="Instrument Serif,Georgia,serif" font-size="32" fill="#e4e2df">One workspace. Many tools. Distinct projects.</text>
+    <text x="64" y="118" font-size="12" fill="#e4e2df" fill-opacity=".56">Workflow relationships are shown explicitly; shared tooling does not imply a single integrated build pipeline.</text>
   </g>
 
-  <!-- Primary dependency: Ternux workspace feeds ADT toolchain. -->
-  <path class="flow" d="M800 196V244" stroke="url(#link)" marker-end="url(#arrow)"/>
-  <path class="flow delay-1" d="M800 323V410" stroke="url(#link)"/>
-  <!-- The shared route branches to every downstream project. -->
-  <path d="M285 423H1315" fill="none" stroke="#4ade80" stroke-opacity=".62" stroke-width="2.2" stroke-linecap="round"/>
-  <path class="flow delay-2" d="M285 423V477" stroke="url(#link)" marker-end="url(#arrow)"/>
-  <path class="flow delay-3" d="M800 423V477" stroke="url(#link)" marker-end="url(#arrow)"/>
-  <path class="flow delay-4" d="M1315 423V477" stroke="url(#link)" marker-end="url(#arrow)"/>
-
-  <g font-family="JetBrains Mono,monospace">
-    <g>
-      <rect class="card" x="575" y="118" width="450" height="78" rx="13"/>
-      <rect class="accent" x="575" y="118" width="5" height="78" rx="2"/>
-      <text x="600" y="148" font-size="19" font-weight="700" fill="#4ade80">Ternux</text>
-      <text x="600" y="174" font-size="11" fill="#e4e2df" fill-opacity=".76">PRIMARY WORKSPACE · TERMUX / PROOT · DEBIAN</text>
-      <text x="1048" y="161" font-size="10" text-anchor="start" fill="#4ade80" fill-opacity=".72">01</text>
-    </g>
-    <g>
-      <rect class="card" x="575" y="245" width="450" height="78" rx="13"/>
-      <rect class="accent" x="575" y="245" width="5" height="78" rx="2"/>
-      <text x="600" y="275" font-size="19" font-weight="700" fill="#4ade80">ADT</text>
-      <text x="600" y="301" font-size="11" fill="#e4e2df" fill-opacity=".76">NATIVE ARM64 TOOLCHAIN · AOSP BUILD TOOLS</text>
-      <text x="1048" y="288" font-size="10" text-anchor="start" fill="#4ade80" fill-opacity=".72">02</text>
-    </g>
-    <text x="826" y="369" font-size="10" fill="#4ade80" fill-opacity=".85">TOOLCHAIN ROUTE</text>
-
-    <g>
-      <rect class="card" x="60" y="478" width="450" height="88" rx="13"/>
-      <rect class="accent" x="60" y="478" width="5" height="88" rx="2"/>
-      <text x="84" y="512" font-size="19" font-weight="700" fill="#4ade80">LAI</text>
-      <text x="84" y="539" font-size="11" fill="#e4e2df" fill-opacity=".76">ON-DEVICE AI · ANDROID RUNTIME · AUTOMATION</text>
-    </g>
-    <g>
-      <rect class="card" x="575" y="478" width="450" height="88" rx="13"/>
-      <rect class="accent" x="575" y="478" width="5" height="88" rx="2"/>
-      <text x="599" y="512" font-size="19" font-weight="700" fill="#4ade80">GGEN</text>
-      <text x="599" y="539" font-size="11" fill="#e4e2df" fill-opacity=".76">CREATIVE + DOCUMENT STUDIO · FLUTTER / DART</text>
-      <text x="1000" y="526" text-anchor="end" font-size="10" fill="#4ade80" fill-opacity=".78">CONNECTED</text>
-    </g>
-    <g>
-      <rect class="card" x="1090" y="478" width="450" height="88" rx="13"/>
-      <rect class="accent" x="1090" y="478" width="5" height="88" rx="2"/>
-      <text x="1114" y="512" font-size="19" font-weight="700" fill="#4ade80">Songjog</text>
-      <text x="1114" y="539" font-size="11" fill="#e4e2df" fill-opacity=".76">BANGLA-FIRST BUSINESS + INSTITUTION OPERATIONS</text>
-    </g>
+  <!-- Primary workspace -->
+  <rect class="card" x="80" y="151" width="1440" height="116" rx="15" stroke-opacity=".55"/>
+  <rect x="80" y="151" width="5" height="116" rx="2" fill="#4ade80"/>
+  <g font-family="Inter,Arial,sans-serif">
+    <text x="108" y="182" font-family="JetBrains Mono,monospace" font-size="10" font-weight="700" letter-spacing="2" fill="#4ade80">01 / PRIMARY WORKSPACE</text>
+    <text x="108" y="216" font-size="24" font-weight="600" fill="#e4e2df">Ternux</text>
+    <text x="108" y="242" font-size="12" fill="#e4e2df" fill-opacity=".68">Termux + PRoot Debian · ARM64 Linux environment · primary workbench</text>
+    <text x="1480" y="214" text-anchor="end" font-family="JetBrains Mono,monospace" font-size="11" fill="#4ade80">WORKSPACE / HOST</text>
   </g>
 
-  <path d="M64 612H1536" stroke="#4ade80" stroke-opacity=".24"/>
-  <g font-family="JetBrains Mono,monospace" font-size="10.5" fill="#e4e2df" fill-opacity=".62" text-anchor="middle">
-    <text x="180" y="642">WORKSPACE</text><text x="490" y="642">TOOLCHAIN</text><text x="800" y="642">BUILD</text><text x="1110" y="642">DEPLOY</text><text x="1420" y="642">VERIFY</text>
+  <path class="flow" d="M800 267V309" stroke="url(#link)" marker-end="url(#arrow)"/>
+  <text x="822" y="293" font-family="JetBrains Mono,monospace" font-size="9.5" fill="#4ade80" fill-opacity=".82">TOOLS CHOSEN PER TASK</text>
+
+  <!-- Tooling layer: ADT is one component, not the entire toolchain. -->
+  <rect class="card" x="80" y="310" width="1440" height="190" rx="15"/>
+  <text x="108" y="341" font-family="JetBrains Mono,monospace" font-size="10" font-weight="700" letter-spacing="2" fill="#4ade80">02 / MULTI-TOOL WORKBENCH</text>
+  <g font-family="Inter,Arial,sans-serif">
+    <g><rect x="108" y="361" width="320" height="88" rx="10" fill="#07150D" stroke="#4ade80" stroke-opacity=".3"/><text x="126" y="386" font-size="15" font-weight="600" fill="#e4e2df">ADT + ADB</text><text x="126" y="409" font-size="11" fill="#e4e2df" fill-opacity=".64">Android build / install / debug</text><text x="126" y="430" font-size="10" fill="#4ade80">A TOOLCHAIN, NOT THE WHOLE WORKFLOW</text></g>
+    <g><rect x="448" y="361" width="320" height="88" rx="10" fill="#07150D" stroke="#4ade80" stroke-opacity=".22"/><text x="466" y="386" font-size="15" font-weight="600" fill="#e4e2df">Git + GitHub CLI</text><text x="466" y="409" font-size="11" fill="#e4e2df" fill-opacity=".64">Source control · PRs · issues · releases</text><text x="466" y="430" font-size="10" fill="#4ade80">VERSION / REPOSITORY OPERATIONS</text></g>
+    <g><rect x="788" y="361" width="320" height="88" rx="10" fill="#07150D" stroke="#4ade80" stroke-opacity=".22"/><text x="806" y="386" font-size="15" font-weight="600" fill="#e4e2df">Build + language tools</text><text x="806" y="409" font-size="11" fill="#e4e2df" fill-opacity=".64">Clang · CMake · Ninja · Flutter / Dart</text><text x="806" y="430" font-size="10" fill="#4ade80">SELECTED BY PROJECT NEED</text></g>
+    <g><rect x="1128" y="361" width="364" height="88" rx="10" fill="#07150D" stroke="#4ade80" stroke-opacity=".22"/><text x="1146" y="386" font-size="15" font-weight="600" fill="#e4e2df">CI + task-specific agents</text><text x="1146" y="409" font-size="11" fill="#e4e2df" fill-opacity=".64">GitHub Actions · AI agents · review / research</text><text x="1146" y="430" font-size="10" fill="#4ade80">ASSISTED, NOT ASSUMED AUTOMATIC</text></g>
   </g>
-  <rect x="1" y="1" width="1598" height="698" rx="26" fill="none" stroke="#e4e2df" stroke-opacity=".1"/>
+  <text x="108" y="478" font-family="Inter,Arial,sans-serif" font-size="11" fill="#e4e2df" fill-opacity=".48">Other utilities and diagnostics are selected as needed; not every tool is used by every project.</text>
+
+  <!-- Real project paths branch from the common workbench to all three downstream applications. -->
+  <path d="M800 500V531H290V573M800 531V573M800 531H1310V573" fill="none" stroke="#4ade80" stroke-opacity=".32" stroke-width="1.8"/>
+  <path class="flow f2" d="M290 531V573" marker-end="url(#arrow)"/>
+  <path class="flow f3" d="M800 531V573" marker-end="url(#arrow)"/>
+  <path class="flow f4" d="M1310 531V573" marker-end="url(#arrow)"/>
+
+  <g font-family="Inter,Arial,sans-serif">
+    <g><rect class="card" x="80" y="574" width="420" height="126" rx="13"/><rect x="80" y="574" width="4" height="126" rx="2" fill="#4ade80"/><text x="105" y="609" font-size="21" font-weight="600" fill="#4ade80">LAI</text><text x="105" y="635" font-size="12" fill="#e4e2df" fill-opacity=".76">Local AI runtime · Android automation</text><text x="105" y="661" font-size="11" fill="#e4e2df" fill-opacity=".48">CPU inference verified; GPU / NPU in qualification</text><a href="https://github.com/soobujmiah/lai"><text x="105" y="683" font-size="10" fill="#4ade80">SOURCE REPOSITORY ↗</text></a></g>
+    <g><rect class="card" x="590" y="574" width="420" height="126" rx="13"/><rect x="590" y="574" width="4" height="126" rx="2" fill="#4ade80"/><text x="615" y="609" font-size="21" font-weight="600" fill="#4ade80">GGEN</text><text x="615" y="635" font-size="12" fill="#e4e2df" fill-opacity=".76">Android-first creative + document studio</text><text x="615" y="661" font-size="11" fill="#e4e2df" fill-opacity=".48">Pure-Dart core · Flutter UI · test-backed behavior</text><a href="https://github.com/soobujmiah/ggen"><text x="615" y="683" font-size="10" fill="#4ade80">SOURCE REPOSITORY ↗</text></a></g>
+    <g><rect class="card" x="1100" y="574" width="420" height="126" rx="13"/><rect x="1100" y="574" width="4" height="126" rx="2" fill="#4ade80"/><text x="1125" y="609" font-size="21" font-weight="600" fill="#4ade80">Songjog</text><text x="1125" y="635" font-size="12" fill="#e4e2df" fill-opacity=".76">Bangla-first business + institution operations</text><text x="1125" y="661" font-size="11" fill="#e4e2df" fill-opacity=".48">Local records · auditable corrections · export</text><a href="https://github.com/soobujmiah/songjog"><text x="1125" y="683" font-size="10" fill="#4ade80">SOURCE REPOSITORY ↗</text></a></g>
+  </g>
+
+  <path d="M80 744H1520" stroke="#4ade80" stroke-opacity=".22"/>
+  <g font-family="JetBrains Mono,monospace" font-size="10" fill="#e4e2df" fill-opacity=".62" text-anchor="middle">
+    <text x="200" y="774">EDIT / IMPLEMENT</text><text x="440" y="774">BUILD / CI</text><text x="680" y="774">DEPLOY</text><text x="920" y="774">DEVICE TEST</text><text x="1160" y="774">DEBUG</text><text x="1400" y="774">DOCUMENT</text>
+  </g>
+  <text x="800" y="827" text-anchor="middle" font-family="Inter,Arial,sans-serif" font-size="12" fill="#e4e2df" fill-opacity=".44">Build → observe → fix → rebuild → retest. Evidence belongs to each project; integration is claimed only when demonstrated.</text>
+  <rect x="1" y="1" width="1598" height="898" rx="24" fill="none" stroke="#e4e2df" stroke-opacity=".1"/>
 </svg>
