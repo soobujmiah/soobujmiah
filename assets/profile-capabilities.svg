@@ -1,57 +1,82 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 500" role="img" aria-labelledby="title desc">
-  <title id="title">Sobuj Miah — Engineering and professional services</title>
-  <desc id="desc">A compact overview of software and AI engineering, web and application delivery, device support, and office and digital administration. This is a capability map, not a live activity counter.</desc>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 560" role="img" aria-labelledby="title desc">
+  <title id="title">Sobuj Miah — Engineering and services capability map</title>
+  <desc id="desc">A glossy emerald glass interface presenting four professional capability areas. Animated signal paths connect the problem-solving core to engineering, digital services, device support and office operations.</desc>
   <style>
-    .route{fill:none;stroke:#4ade80;stroke-opacity:.65;stroke-width:2;stroke-dasharray:6 10;animation:route-flow 12s linear infinite}
-    .node-dot{animation:node-pulse 6s ease-in-out infinite}
-    .d2{animation-delay:-1.5s}.d3{animation-delay:-3s}.d4{animation-delay:-4.5s}
-    @keyframes route-flow{to{stroke-dashoffset:-192}}
-    @keyframes node-pulse{0%,100%{opacity:.45;transform:scale(.85)}50%{opacity:1;transform:scale(1.12)}}
-    @media(prefers-reduced-motion:reduce){.route,.node-dot{animation:none}}
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Instrument+Serif&amp;family=JetBrains+Mono:wght@400;500;600&amp;display=swap');
+    .ui{font-family:Inter,Arial,sans-serif}.display{font-family:'Instrument Serif',Georgia,serif}.mono{font-family:'JetBrains Mono',monospace}
+    .route{fill:none;stroke:url(#signal);stroke-width:2.2;stroke-linecap:round;stroke-dasharray:5 12;animation:route 8s linear infinite}
+    .r2{animation-duration:10s;animation-direction:reverse}.r3{animation-duration:12s;animation-delay:-4s}
+    .pulse{transform-box:fill-box;transform-origin:center;animation:pulse 3.6s ease-in-out infinite}.p2{animation-delay:-1.2s}.p3{animation-delay:-2.4s}.p4{animation-delay:-.6s}
+    .shine{animation:shine 8s ease-in-out infinite}
+    .orbit{transform-origin:600px 184px;animation:orbit 18s linear infinite}
+    @keyframes route{to{stroke-dashoffset:-204}}
+    @keyframes pulse{0%,100%{opacity:.4;transform:scale(.8)}45%,60%{opacity:1;transform:scale(1.22)}}
+    @keyframes shine{0%,20%{transform:translateX(-900px);opacity:0}35%{opacity:.55}60%,100%{transform:translateX(1500px);opacity:0}}
+    @keyframes orbit{to{transform:rotate(360deg)}}
+    @media(prefers-reduced-motion:reduce){.route,.pulse,.shine,.orbit{animation:none}}
   </style>
   <defs>
-    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#050507"/><stop offset=".52" stop-color="#07150D"/><stop offset="1" stop-color="#050507"/></linearGradient>
-    <radialGradient id="glow" cx="50%" cy="45%" r="65%"><stop stop-color="#22c55e" stop-opacity=".13"/><stop offset="1" stop-color="#050507" stop-opacity="0"/></radialGradient>
-    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse"><path d="M40 0H0V40" fill="none" stroke="#e4e2df" stroke-opacity=".028"/></pattern>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#050507"/><stop offset=".45" stop-color="#07150D"/><stop offset="1" stop-color="#050507"/></linearGradient>
+    <linearGradient id="glass" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#12331f" stop-opacity=".76"/><stop offset=".42" stop-color="#07150D" stop-opacity=".94"/><stop offset="1" stop-color="#050507" stop-opacity=".98"/></linearGradient>
+    <linearGradient id="edge" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#4ade80" stop-opacity=".8"/><stop offset=".5" stop-color="#22c55e" stop-opacity=".12"/><stop offset="1" stop-color="#e4e2df" stop-opacity=".2"/></linearGradient>
+    <linearGradient id="signal" x1="0" y1="0" x2="1" y2="0"><stop stop-color="#10b981" stop-opacity=".12"/><stop offset=".5" stop-color="#4ade80"/><stop offset="1" stop-color="#22c55e" stop-opacity=".12"/></linearGradient>
+    <linearGradient id="glint" x1="0" y1="0" x2="1" y2="0"><stop stop-color="#fff" stop-opacity="0"/><stop offset=".5" stop-color="#caffdb" stop-opacity=".42"/><stop offset="1" stop-color="#fff" stop-opacity="0"/></linearGradient>
+    <radialGradient id="halo"><stop stop-color="#22c55e" stop-opacity=".22"/><stop offset="1" stop-color="#22c55e" stop-opacity="0"/></radialGradient>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse"><path d="M40 0H0V40" fill="none" stroke="#e4e2df" stroke-opacity=".04"/></pattern>
+    <pattern id="dots" width="9" height="9" patternUnits="userSpaceOnUse"><circle cx="1.5" cy="1.5" r=".7" fill="#4ade80" fill-opacity=".25"/></pattern>
+    <clipPath id="clip"><rect width="1200" height="560" rx="22"/></clipPath>
   </defs>
-  <rect width="1200" height="500" rx="20" fill="url(#bg)"/><rect width="1200" height="500" rx="20" fill="url(#grid)"/><rect width="1200" height="500" rx="20" fill="url(#glow)"/>
-  <g font-family="Inter,Arial,sans-serif">
-    <text x="42" y="45" font-family="JetBrains Mono,monospace" font-size="10" font-weight="700" letter-spacing="2.5" fill="#4ade80">CAPABILITY MAP / PRACTICAL OUTCOMES</text>
-    <text x="42" y="79" font-family="Instrument Serif,Georgia,serif" font-size="31" fill="#e4e2df">Engineering is one part of the work.</text>
-    <text x="42" y="104" font-size="12" fill="#e4e2df" fill-opacity=".58">Software, support and office workflows — kept distinct, connected by practical problem-solving.</text>
-  </g>
-  <g fill="none" stroke="#4ade80" stroke-opacity=".22" stroke-width="1.5">
-    <path d="M600 154V180M600 180H300V206M600 180H900V206M300 315V340H600V366M900 315V340H600"/>
-  </g>
-  <g class="route"><path d="M600 154V180H300V206M600 180H900V206M300 315V340H600V366M900 315V340H600"/></g>
-  <g>
-    <rect x="380" y="120" width="440" height="35" rx="17" fill="#07150D" stroke="#4ade80" stroke-opacity=".45"/>
-    <text x="600" y="142" text-anchor="middle" font-family="JetBrains Mono,monospace" font-size="11" font-weight="700" fill="#4ade80">UNDERSTAND → SOLVE → VERIFY</text>
-  </g>
-  <g font-family="Inter,Arial,sans-serif">
-    <g><rect x="42" y="206" width="516" height="109" rx="12" fill="#060706" stroke="#4ade80" stroke-opacity=".28"/><rect x="42" y="206" width="4" height="109" rx="2" fill="#4ade80"/>
-      <text x="64" y="233" font-family="JetBrains Mono,monospace" font-size="10" font-weight="700" letter-spacing="1.2" fill="#4ade80">01 / ENGINEERING</text>
-      <text x="64" y="259" font-size="16" font-weight="600" fill="#e4e2df">Software · On-device AI · Android / Linux</text>
-      <text x="64" y="283" font-size="12" fill="#e4e2df" fill-opacity=".62">Native tooling · automation · build / release workflows</text>
-      <text x="64" y="301" font-size="11" fill="#e4e2df" fill-opacity=".42">CI and physical-device evidence where applicable</text>
+  <g clip-path="url(#clip)">
+    <rect width="1200" height="560" fill="url(#bg)"/><rect width="1200" height="560" fill="url(#grid)"/><ellipse cx="600" cy="180" rx="380" ry="190" fill="url(#halo)"/>
+    <text x="40" y="42" class="mono" font-size="10" font-weight="600" letter-spacing="2.5" fill="#4ade80">CAPABILITY MAP / PRACTICAL OUTCOMES</text>
+    <text x="40" y="80" class="display" font-size="34" fill="#e4e2df">Technology, from systems to everyday work.</text>
+    <text x="40" y="105" class="ui" font-size="12" fill="#e4e2df" fill-opacity=".6">Engineering · Digital services · Device support · Office operations</text>
+    <g>
+      <rect x="360" y="132" width="480" height="76" rx="15" fill="url(#glass)" stroke="url(#edge)"/>
+      <path d="M374 133H650" stroke="#b7ffd2" stroke-opacity=".38"/>
+      <text x="600" y="159" text-anchor="middle" class="mono" font-size="10" font-weight="600" letter-spacing="1.8" fill="#4ade80">THE DELIVERY LOOP</text>
+      <text x="600" y="184" text-anchor="middle" class="ui" font-size="17" font-weight="600" fill="#e4e2df">Understand → Solve → Verify</text>
+      <rect x="360" y="132" width="480" height="76" rx="15" fill="url(#dots)" opacity=".3"/>
+      <g class="orbit"><circle cx="600" cy="132" r="4" fill="#4ade80"/><circle cx="600" cy="132" r="8" fill="none" stroke="#4ade80" stroke-opacity=".4"/></g>
     </g>
-    <g><rect x="642" y="206" width="516" height="109" rx="12" fill="#060706" stroke="#4ade80" stroke-opacity=".2"/><rect x="642" y="206" width="4" height="109" rx="2" fill="#10b981"/>
-      <text x="664" y="233" font-family="JetBrains Mono,monospace" font-size="10" font-weight="700" letter-spacing="1.2" fill="#4ade80">02 / WEB + DIGITAL SERVICES</text>
-      <text x="664" y="259" font-size="16" font-weight="600" fill="#e4e2df">Websites · Apps · Custom software</text>
-      <text x="664" y="283" font-size="12" fill="#e4e2df" fill-opacity=".62">Web design / SEO · graphics · business technology</text>
-      <text x="664" y="301" font-size="11" fill="#e4e2df" fill-opacity=".42">Scope and deliverables agreed per service</text>
+    <path d="M600 208V231H300V254M600 231H900V254M300 378V407H600V429M900 378V407H600" fill="none" stroke="#4ade80" stroke-opacity=".22" stroke-width="1.5"/>
+    <path class="route" d="M600 208V231H300V254M600 231H900V254M300 378V407H600V429M900 378V407H600"/>
+    <g>
+      <rect x="40" y="254" width="520" height="124" rx="13" fill="url(#glass)" stroke="url(#edge)"/>
+      <rect x="40" y="254" width="520" height="124" rx="13" fill="url(#dots)" opacity=".18"/>
+      <path d="M54 255H330" stroke="#b7ffd2" stroke-opacity=".35"/>
+      <text x="62" y="281" class="mono" font-size="10" font-weight="600" letter-spacing="1.3" fill="#4ade80">01 / ENGINEERING</text>
+      <text x="62" y="309" class="ui" font-size="17" font-weight="600" fill="#e4e2df">Software · AI · Android · Linux</text>
+      <text x="62" y="334" class="ui" font-size="12" fill="#e4e2df" fill-opacity=".68">Native tooling · automation · build / release workflows</text>
+      <text x="62" y="356" class="ui" font-size="11" fill="#e4e2df" fill-opacity=".46">Device validation and engineering evidence</text>
+      <rect class="shine" x="-800" y="254" width="210" height="124" fill="url(#glint)" opacity=".42"/>
     </g>
-    <g><rect x="42" y="366" width="516" height="92" rx="12" fill="#060706" stroke="#4ade80" stroke-opacity=".2"/><rect x="42" y="366" width="4" height="92" rx="2" fill="#10b981"/>
-      <text x="64" y="392" font-family="JetBrains Mono,monospace" font-size="10" font-weight="700" letter-spacing="1.2" fill="#4ade80">03 / DEVICE SUPPORT</text>
-      <text x="64" y="418" font-size="16" font-weight="600" fill="#e4e2df">Computer · Android · Troubleshooting</text>
-      <text x="64" y="439" font-size="12" fill="#e4e2df" fill-opacity=".62">Setup, diagnostics and practical technical help</text>
+    <g>
+      <rect x="640" y="254" width="520" height="124" rx="13" fill="url(#glass)" stroke="url(#edge)"/>
+      <path d="M654 255H930" stroke="#b7ffd2" stroke-opacity=".3"/>
+      <text x="662" y="281" class="mono" font-size="10" font-weight="600" letter-spacing="1.3" fill="#4ade80">02 / DIGITAL SERVICES</text>
+      <text x="662" y="309" class="ui" font-size="17" font-weight="600" fill="#e4e2df">Websites · Apps · Custom software</text>
+      <text x="662" y="334" class="ui" font-size="12" fill="#e4e2df" fill-opacity=".68">Web design / SEO · graphics · business technology</text>
+      <text x="662" y="356" class="ui" font-size="11" fill="#e4e2df" fill-opacity=".46">Digital delivery for people and organisations</text>
     </g>
-    <g><rect x="642" y="366" width="516" height="92" rx="12" fill="#060706" stroke="#4ade80" stroke-opacity=".2"/><rect x="642" y="366" width="4" height="92" rx="2" fill="#4ade80"/>
-      <text x="664" y="392" font-family="JetBrains Mono,monospace" font-size="10" font-weight="700" letter-spacing="1.2" fill="#4ade80">04 / OFFICE + DIGITAL OPERATIONS</text>
-      <text x="664" y="418" font-size="16" font-weight="600" fill="#e4e2df">Administration · Data work · Documentation</text>
-      <text x="664" y="439" font-size="12" fill="#e4e2df" fill-opacity=".62">Practical support for offices, institutions and small teams</text>
+    <g>
+      <rect x="40" y="429" width="520" height="92" rx="13" fill="url(#glass)" stroke="url(#edge)"/>
+      <path d="M54 430H330" stroke="#b7ffd2" stroke-opacity=".3"/>
+      <text x="62" y="455" class="mono" font-size="10" font-weight="600" letter-spacing="1.3" fill="#4ade80">03 / DEVICE SUPPORT</text>
+      <text x="62" y="480" class="ui" font-size="16" font-weight="600" fill="#e4e2df">Computer · Android · Troubleshooting</text>
+      <text x="62" y="502" class="ui" font-size="11" fill="#e4e2df" fill-opacity=".62">Setup, diagnostics and practical technical help</text>
     </g>
+    <g>
+      <rect x="640" y="429" width="520" height="92" rx="13" fill="url(#glass)" stroke="url(#edge)"/>
+      <path d="M654 430H930" stroke="#b7ffd2" stroke-opacity=".3"/>
+      <text x="662" y="455" class="mono" font-size="10" font-weight="600" letter-spacing="1.3" fill="#4ade80">04 / OFFICE + DIGITAL OPERATIONS</text>
+      <text x="662" y="480" class="ui" font-size="16" font-weight="600" fill="#e4e2df">Administration · Data · Documentation</text>
+      <text x="662" y="502" class="ui" font-size="11" fill="#e4e2df" fill-opacity=".62">Support for offices, institutions and small teams</text>
+    </g>
+    <path d="M40 540H1160" stroke="#4ade80" stroke-opacity=".25"/>
+    <path class="route r2" d="M40 540H1160"/>
+    <g class="pulse"><circle cx="40" cy="540" r="3" fill="#4ade80"/></g><g class="pulse p2"><circle cx="600" cy="540" r="3" fill="#4ade80"/></g><g class="pulse p3"><circle cx="1160" cy="540" r="3" fill="#4ade80"/></g>
+    <rect class="shine" x="-900" y="0" width="180" height="560" fill="url(#glint)" opacity=".12"/>
+    <rect x="1" y="1" width="1198" height="558" rx="22" fill="none" stroke="#e4e2df" stroke-opacity=".16"/>
   </g>
-  <g class="node-dot"><circle cx="600" cy="180" r="3.5" fill="#4ade80"/></g><g class="node-dot d2"><circle cx="300" cy="206" r="3.5" fill="#4ade80"/></g><g class="node-dot d3"><circle cx="900" cy="206" r="3.5" fill="#4ade80"/></g><g class="node-dot d4"><circle cx="600" cy="366" r="3.5" fill="#4ade80"/></g>
-  <rect x="1" y="1" width="1198" height="498" rx="20" fill="none" stroke="#e4e2df" stroke-opacity=".1"/>
 </svg>
