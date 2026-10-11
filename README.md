@@ -10,7 +10,7 @@ On-Device AI · Android · ARM64 Linux · Native Tooling · Software Systems
 I build systems close to the hardware: local LLM inference on ARM devices, consent-bound Android automation, native toolchains compiled from AOSP source, and Linux desktops running on phones. Self-taught, and built entirely from an Android phone (Termux / PRoot Debian, no PC) — heavy compilation routes through GitHub Actions, and every hardware-dependent claim is checked against one physical reference device before I call it done.
 
 <div align="center">
-  <img src="./assets/profile-stats.svg" alt="Engineering telemetry: featured systems, documented tests, AOSP releases, canonical links and delivery loop" width="100%" />
+  <img src="./assets/profile-stats.svg" alt="Five featured systems, documented tests, AOSP releases, canonical links and phone-first delivery loop" width="100%" />
 </div>
 
 ## What I Build
@@ -50,7 +50,6 @@ Practical technology and digital support for individuals, offices, and businesse
 | [LAI](https://github.com/soobujmiah/lai) <br> ![LAI CI](https://github.com/soobujmiah/lai/actions/workflows/android_build.yml/badge.svg) | Bangla-first local AI + consent-driven Android automation runtime | Real arm64 llama.cpp CPU inference (GGUF, streaming, KV-prefix reuse) with device-measured throughput and TTFT; Shizuku/Accessibility consent boundaries with a hash-chained audit trail; symbolized root-cause diagnosis of an Adreno Vulkan driver crash (`vkCmdBindPipeline` SIGSEGV) that shaped a fail-closed CPU-default architecture · [v0.9.7](https://github.com/soobujmiah/lai/releases) |
 | [GGEN](https://github.com/soobujmiah/ggen) <br> ![GGEN core CI](https://github.com/soobujmiah/ggen/actions/workflows/core.yml/badge.svg) | Android-first creative & document studio (Flutter/Dart) | Pure-Dart core with 143 unit tests and a Flutter shell with 353 widget/controller tests; deterministic text-layout engine with a proven conservation invariant; transactional file persistence with SHA-256 receipts |
 | [Songjog](https://github.com/soobujmiah/songjog) <br> ![Songjog CI](https://github.com/soobujmiah/songjog/actions/workflows/flutter-ci.yml/badge.svg) | Bangla-first business & institution operations app | Owner Edition: fast daily entry, local SQLite records, auditable corrections instead of destructive deletes; 94 tests green on CI; export/diagnostics validated on the physical reference device |
-| [OnSkillIT Platform](https://github.com/soobujmiah/onskillit-platform) <br> ![OnSkillIT CI](https://github.com/soobujmiah/onskillit-platform/actions/workflows/foundation.yml/badge.svg) | Bilingual agency, training, and digital-product platform (Next.js 16 / PostgreSQL / Drizzle) | 16-phase / 74-page bilingual architecture with foundation, shell, identity, and publishing core verified on GitHub Actions CI (PostgreSQL 16 + Drizzle + Playwright E2E + locale/OpenAPI gates) · PHASE-00 through PHASE-04 complete; PHASE-05 active |
 <!-- PROFILE_PROJECTS:END -->
 
 ## Research & Engineering
@@ -73,10 +72,10 @@ Each repository documents what is **implemented and device-verified** separately
 ## Project Ecosystem
 
 <div align="center">
-  <img src="./assets/project-ecosystem.svg" alt="Project ecosystem: LAI, GGEN, ADT, Ternux, Songjog and OnSkillIT around a phone-first engineering workflow" width="100%" />
+  <img src="./assets/project-ecosystem.svg?v=2" alt="Project ecosystem: LAI, GGEN, ADT, Ternux and Songjog around a phone-first engineering workflow" width="100%" />
 </div>
 
-The projects are separate systems with complementary roles: **LAI** focuses on local AI and Android automation; **ADT** provides native ARM64 development tooling; **Ternux** provides the Linux-on-Android environment; **GGEN** and **Songjog** turn the platform into user-facing applications; **OnSkillIT** is a bilingual agency, training, and digital-product web platform with Phases 0–4 verified on CI. The common thread is the same build → deploy → measure → document loop.
+The projects are separate systems with complementary roles: **LAI** focuses on local AI and Android automation; **ADT** provides native ARM64 development tooling; **Ternux** provides the Linux-on-Android environment; **GGEN** and **Songjog** deliver user-facing applications. The common thread is the same build → deploy → measure → document loop.
 
 ## Tech Stack
 
@@ -99,7 +98,7 @@ Only the heavy build runs remotely, on GitHub Actions. Everything else — writi
 
 ## Currently
 
-Qualifying GPU/NPU acceleration paths (Vulkan on Adreno, Hexagon/QNN) against real hardware, hardening CI/release pipelines across these projects, continuing development of [Songjog](https://github.com/soobujmiah/songjog), and building the [OnSkillIT Digital Platform](https://github.com/soobujmiah/onskillit-platform) (Phases 0–4 verified on CI; Phase 5 public core next).
+Qualifying GPU/NPU acceleration paths (Vulkan on Adreno, Hexagon/QNN) against real hardware, hardening CI/release pipelines across these projects, and continuing development of [Songjog](https://github.com/soobujmiah/songjog).
 
 ## Find Me Online
 
