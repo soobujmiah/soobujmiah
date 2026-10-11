@@ -13,6 +13,14 @@ I build systems close to the hardware: local LLM inference on ARM devices, conse
   <img src="./assets/profile-stats.svg?v=2" alt="Five featured systems, documented tests, AOSP releases, canonical links and phone-first delivery loop" width="100%" />
 </div>
 
+## Live GitHub Activity
+
+<div align="center">
+  <a href="https://github.com/stats-organization/github-stats-extended"><img src="https://github-stats-extended.vercel.app/api?username=soobujmiah&amp;show_icons=true&amp;hide_rank=true&amp;hide=stars%2Ccontribs&amp;show=reviews%2Cprs_merged&amp;title_color=4ade80&amp;text_color=e4e2df&amp;bg_color=050507&amp;border_color=22c55e&amp;border_radius=12&amp;cache_seconds=21600" alt="Live public GitHub activity statistics: commits, pull requests, issues, reviews and merged pull requests" width="500" /></a>
+  <br>
+  <sub>Public GitHub activity · dynamically generated, with service caching</sub>
+</div>
+
 ## What I Build
 
 - **On-device AI runtimes** — llama.cpp-based local inference on ARM64 Android: GGUF models, streaming, KV-prefix reuse, model-integrity verification, CPU/GPU backend routing
@@ -72,10 +80,10 @@ Each repository documents what is **implemented and device-verified** separately
 ## Project Ecosystem
 
 <div align="center">
-  <img src="./assets/project-ecosystem.svg?v=3" alt="Project ecosystem: LAI, GGEN, ADT, Ternux and Songjog around a phone-first engineering workflow" width="100%" />
+  <img src="./assets/project-ecosystem.svg?v=4" alt="Dependency map: Ternux workspace → ADT toolchain → connected LAI, GGEN, and Songjog projects" width="100%" />
 </div>
 
-The projects are separate systems with complementary roles: **LAI** focuses on local AI and Android automation; **ADT** provides native ARM64 development tooling; **Ternux** provides the Linux-on-Android environment; **GGEN** and **Songjog** deliver user-facing applications. The common thread is the same build → deploy → measure → document loop.
+**Ternux** is the primary Termux/PRoot workspace. **ADT** supplies the native ARM64 toolchain used from that workspace. **LAI**, **GGEN**, and **Songjog** are the downstream application projects, each with a distinct role and a visible route into the shared build-and-verify process.
 
 ## Tech Stack
 
