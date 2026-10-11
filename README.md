@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="./assets/profile-banner.svg?v=4" alt="Sobuj Miah — Independent Software & AI Systems Engineer" width="100%" />
+  <img src="./assets/profile-banner.svg?v=5" alt="Sobuj Miah — Independent Software & AI Systems Engineer" width="100%" />
 </div>
 
 # Sobuj Miah
@@ -7,10 +7,10 @@
 **Independent Software & AI Systems Engineer**  
 On-Device AI · Android · ARM64 Linux · Native Tooling · Software Systems
 
-I build systems close to the hardware: local LLM inference on ARM devices, consent-bound Android automation, native toolchains compiled from AOSP source, and Linux desktops running on phones. Self-taught, and built entirely from an Android phone (Termux / PRoot Debian, no PC) — heavy compilation routes through GitHub Actions, and every hardware-dependent claim is checked against one physical reference device before I call it done.
+I am a self-taught software and technology builder based in Dhaka, Bangladesh. I build on-device AI, Android software, ARM64 Linux environments, native tooling and automation—primarily from an Android phone using Termux and PRoot Debian, with GitHub Actions for heavy builds. Alongside independent engineering, I also do practical web/software work, computer and Android support, and office and digital administration for real-world workflows. I separate device-verified results from experimental work.
 
 <div align="center">
-  <img src="./assets/profile-stats.svg?v=2" alt="Five featured systems, documented tests, AOSP releases, canonical links and phone-first delivery loop" width="100%" />
+  <img src="./assets/profile-capabilities.svg?v=1" alt="Capability map: engineering, web and digital services, device support, and office and digital operations" width="100%" />
 </div>
 
 ## What I Build
@@ -21,7 +21,7 @@ I build systems close to the hardware: local LLM inference on ARM devices, conse
 - **Linux on Android** — no-root Debian/Xfce desktops with real GPU routes (Zink/Turnip Vulkan, VirGL) and doctor/repair/benchmark tooling
 - **Bangla-first applications** — business ledger and document tools where Bengali is the primary language, not a translation layer
 
-## Services
+## Professional & Practical Services
 
 <div align="center">
 
@@ -30,15 +30,15 @@ I build systems close to the hardware: local LLM inference on ARM devices, conse
 
 </div>
 
-Practical technology and digital support for individuals, offices, and businesses — with the full service catalog available on the [Services page](https://soobujmiah.github.io/services/).
+I also support practical technology and operational work beyond software engineering: website and web design, custom software and mobile apps, SEO, computer and Android troubleshooting, graphics, business technology, office administration, and data work. The portfolio’s [Services page](https://soobujmiah.github.io/services/) has the service details.
 
-## How I Can Help
+## Scope of Work
 
-- **Build practical software** — Android applications, web products, business tools, and custom software shaped around real workflows.
-- **Work close to the device** — on-device AI, Android/Linux environments, ARM64 tooling, CI/release pipelines, and physical-device validation.
-- **Improve technology workflows** — automation, troubleshooting, documentation, deployment, and reproducible development setups for individuals, offices, and businesses.
-- **Deliver practical digital services** — website development, computer and Android support, business technology, graphics, office technology, and data work.
-- **Research under constraints** — investigate difficult device/runtime problems, separate verified results from experimental paths, and document what the evidence supports.
+- **Engineering:** on-device AI, Android/Linux systems, ARM64 tooling, build and release pipelines, and hardware validation.
+- **Digital services:** web design and development, custom software, mobile apps, SEO, and graphics.
+- **Technical support:** computer and Android setup, troubleshooting, and workflow improvement.
+- **Office and business support:** administration, data work, documentation, and technology-assisted processes.
+- **Research:** reproduce difficult problems, test hypotheses, and label results by the strength of the evidence.
 
 ## Featured Work
 
@@ -72,12 +72,12 @@ Each repository documents what is **implemented and device-verified** separately
 ## Project Ecosystem
 
 <div align="center">
-  <img src="./assets/project-ecosystem.svg?v=4" alt="Dependency map: Ternux workspace → ADT toolchain → connected LAI, GGEN, and Songjog projects" width="100%" />
+  <img src="./assets/project-ecosystem.svg?v=5" alt="Development environment map: Ternux workspace, multi-tool workbench including ADT, GitHub CLI, build tools and AI agents, and the connected LAI, GGEN and Songjog projects" width="100%" />
 </div>
 
 **Ternux** is the primary Termux/PRoot workspace. **ADT** supplies the native ARM64 toolchain used from that workspace. **LAI**, **GGEN**, and **Songjog** are the downstream application projects, each with a distinct role and a visible route into the shared build-and-verify process.
 
-## Tech Stack
+## Tools & Technologies
 
 <div align="center">
 
@@ -94,11 +94,11 @@ Each repository documents what is **implemented and device-verified** separately
 
 ## How I Work
 
-Only the heavy build runs remotely, on GitHub Actions. Everything else — writing and editing code, pulling the built artifact back, installing it over ADB, launching it, debugging what goes wrong — happens on the same phone against the same physical reference device. Failures loop straight back into a fix → rebuild → redeploy → retest pass. No separate build machine, test lab, or handoff between roles.
+The primary workspace is Termux + PRoot Debian on Android. Depending on the task, I use Git/GitHub CLI for repository work, language-specific tools and build systems, AI agents for scoped implementation or research, and GitHub Actions for heavy or reproducible builds. Where a project needs device validation, I retrieve the artifact, install or exercise it on the reference device, inspect failures, then fix → rebuild → redeploy → retest. Not every project uses every tool or shares one automated pipeline.
 
 ## Currently
 
-Qualifying GPU/NPU acceleration paths (Vulkan on Adreno, Hexagon/QNN) against real hardware, hardening CI/release pipelines across these projects, and continuing development of [Songjog](https://github.com/soobujmiah/songjog).
+Qualifying GPU/NPU acceleration paths (Vulkan on Adreno, Hexagon/QNN) against real hardware; improving reproducible build, release, and verification workflows; and continuing development of [Songjog](https://github.com/soobujmiah/songjog).
 
 ## Find Me Online
 
