@@ -75,7 +75,7 @@ Each repository documents what is **implemented and device-verified** separately
   <img src="./assets/project-ecosystem.svg?v=5" alt="Development environment map: Ternux workspace, multi-tool workbench including ADT, GitHub CLI, build tools and AI agents, and the connected LAI, GGEN and Songjog projects" width="100%" />
 </div>
 
-**Ternux** is the primary Termux/PRoot workspace. **ADT** supplies the native ARM64 toolchain used from that workspace. **LAI**, **GGEN**, and **Songjog** are the downstream application projects, each with a distinct role and a visible route into the shared build-and-verify process.
+**Ternux** is the primary Termux/PRoot workspace. **ADT** is one specialized toolchain used there for Android build, install, and debug work—not the entire toolset. The wider workbench also includes Git and GitHub CLI, language/build tools, GitHub Actions, diagnostics, and task-specific AI agents. **LAI**, **GGEN**, and **Songjog** use relevant parts of this environment; shared tooling does not imply that all three are connected through one automated pipeline.
 
 ## Tools & Technologies
 
