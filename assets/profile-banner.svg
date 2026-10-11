@@ -1,73 +1,66 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 560" role="img" aria-labelledby="title desc">
-  <title id="title">Sobuj Miah — Independent Software &amp; AI Systems Engineer</title>
-  <desc id="desc">A restrained dark-green technical profile banner. A clear signal travels through the phone-first engineering workflow from Termux and PRoot to GitHub Actions, ADB, a real device, and verification.</desc>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 590" role="img" aria-labelledby="title desc">
+  <title id="title">Sobuj Miah — Software, AI systems and practical technology</title>
+  <desc id="desc">Portfolio-matched dark editorial banner with restrained green signal motion. It presents software and AI engineering alongside web, computer and Android support, office administration and digital workflow services.</desc>
   <style>
-    .background-grid{animation:grid-drift 48s linear infinite}
-    .workflow-line{stroke-dasharray:7 13;animation:workflow-flow 8s linear infinite}
-    .workflow-step{animation:step-state 8s linear infinite}
-    .step-1{animation-delay:0s}.step-2{animation-delay:1.6s}.step-3{animation-delay:3.2s}.step-4{animation-delay:4.8s}.step-5{animation-delay:6.4s}
-    .ambient-glow{animation:ambient-breathe 12s ease-in-out infinite}
-    @keyframes grid-drift{to{transform:translate(48px,48px)}}
-    @keyframes workflow-flow{to{stroke-dashoffset:-160}}
-    @keyframes step-state{0%,10%,100%{opacity:.48}3%,7%{opacity:1}}
-    @keyframes ambient-breathe{0%,100%{opacity:.48}50%{opacity:.72}}
-    @media (prefers-reduced-motion:reduce){.background-grid,.workflow-line,.workflow-step,.ambient-glow{animation:none}}
+    .signal{stroke-dasharray:7 13;animation:signal-travel 9s linear infinite}
+    .pulse{transform-box:fill-box;transform-origin:center;animation:signal-pulse 9s ease-in-out infinite}
+    .p2{animation-delay:-2.25s}.p3{animation-delay:-4.5s}.p4{animation-delay:-6.75s}
+    .ambient{animation:ambient-breathe 12s ease-in-out infinite}
+    @keyframes signal-travel{to{stroke-dashoffset:-200}}
+    @keyframes signal-pulse{0%,100%{opacity:.4;transform:scale(.85)}12%,20%{opacity:1;transform:scale(1.18)}30%{opacity:.55;transform:scale(1)}}
+    @keyframes ambient-breathe{0%,100%{opacity:.55}50%{opacity:.8}}
+    @media(prefers-reduced-motion:reduce){.signal,.pulse,.ambient{animation:none}}
   </style>
   <defs>
-    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#050507"/><stop offset=".52" stop-color="#07150D"/><stop offset="1" stop-color="#050507"/></linearGradient>
-    <radialGradient id="ambient" cx="52%" cy="38%" r="72%"><stop stop-color="#22c55e" stop-opacity=".16"/><stop offset=".58" stop-color="#10b981" stop-opacity=".035"/><stop offset="1" stop-color="#050507" stop-opacity="0"/></radialGradient>
-    <linearGradient id="green-line" x1="0" y1="0" x2="1" y2="0"><stop stop-color="#10b981" stop-opacity=".15"/><stop offset=".5" stop-color="#4ade80" stop-opacity=".85"/><stop offset="1" stop-color="#10b981" stop-opacity=".2"/></linearGradient>
-    <linearGradient id="card-fill" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#0a1a10"/><stop offset="1" stop-color="#060907"/></linearGradient>
-    <pattern id="grid" width="64" height="64" patternUnits="userSpaceOnUse"><path d="M64 0H0V64" fill="none" stroke="#e4e2df" stroke-opacity=".035"/></pattern>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#050507"/><stop offset=".54" stop-color="#07150D"/><stop offset="1" stop-color="#050507"/></linearGradient>
+    <radialGradient id="glow" cx="52%" cy="38%" r="74%"><stop stop-color="#22c55e" stop-opacity=".15"/><stop offset=".58" stop-color="#10b981" stop-opacity=".035"/><stop offset="1" stop-color="#050507" stop-opacity="0"/></radialGradient>
+    <linearGradient id="line" x1="0" y1="0" x2="1" y2="0"><stop stop-color="#10b981" stop-opacity=".2"/><stop offset=".5" stop-color="#4ade80" stop-opacity=".85"/><stop offset="1" stop-color="#10b981" stop-opacity=".2"/></linearGradient>
+    <pattern id="grid" width="56" height="56" patternUnits="userSpaceOnUse"><path d="M56 0H0V56" fill="none" stroke="#e4e2df" stroke-opacity=".03"/></pattern>
   </defs>
-  <rect width="1600" height="560" rx="26" fill="url(#bg)"/>
-  <rect class="background-grid" x="-64" y="-64" width="1728" height="688" fill="url(#grid)"/>
-  <rect width="1600" height="560" rx="26" fill="url(#ambient)" class="ambient-glow"/>
-  <path d="M76 94H1524" stroke="#e4e2df" stroke-opacity=".08"/>
-  <g font-family="'Chakra Petch','Inter Display',Inter,Arial,sans-serif">
-    <text x="78" y="70" font-size="14" font-weight="700" fill="#4ade80" letter-spacing="4">SOOBUJMIAH / SYSTEMS</text>
-    <text x="76" y="145" font-size="43" font-weight="700" letter-spacing="-1.2" fill="#e4e2df">INDEPENDENT SOFTWARE</text>
-    <text x="76" y="195" font-size="43" font-weight="700" letter-spacing="-1.2" fill="#e4e2df">&amp; AI SYSTEMS ENGINEER</text>
-    <text x="79" y="229" font-size="14" fill="#e4e2df" fill-opacity=".64" letter-spacing=".8">ON-DEVICE AI  ·  ANDROID  ·  ARM64 LINUX  ·  NATIVE TOOLING</text>
+  <rect width="1600" height="590" rx="24" fill="url(#bg)"/>
+  <rect width="1600" height="590" rx="24" fill="url(#grid)"/>
+  <rect class="ambient" width="1600" height="590" rx="24" fill="url(#glow)"/>
+  <path d="M72 90H1528" stroke="#e4e2df" stroke-opacity=".08"/>
+  <g font-family="Inter,Arial,sans-serif">
+    <text x="76" y="62" font-family="JetBrains Mono,monospace" font-size="11" font-weight="700" letter-spacing="3" fill="#4ade80">SOOBUJMIAH / ENGINEERING + PRACTICAL TECHNOLOGY</text>
+    <text x="72" y="145" font-family="Instrument Serif,Georgia,serif" font-size="56" fill="#e4e2df">Sobuj Miah</text>
+    <text x="76" y="184" font-size="20" font-weight="600" fill="#e4e2df">Independent Software &amp; AI Systems Engineer</text>
+    <text x="76" y="215" font-size="14" fill="#e4e2df" fill-opacity=".68">On-device AI · Android · ARM64 Linux · Software systems · Automation</text>
+    <text x="76" y="241" font-size="14" fill="#e4e2df" fill-opacity=".68">Web and software services · Computer / Android support · Office and digital operations</text>
 
     <g>
-      <rect x="76" y="260" width="258" height="82" rx="12" fill="url(#card-fill)" stroke="#4ade80" stroke-opacity=".28"/>
-      <path d="M94 274H316" stroke="#4ade80" stroke-opacity=".22"/>
-      <text x="96" y="291" font-size="10" font-weight="700" fill="#4ade80" letter-spacing="2">BUILD ENVIRONMENT</text>
-      <text x="96" y="320" font-size="19" font-weight="700" fill="#e4e2df">PHONE-FIRST</text>
+      <rect x="76" y="276" width="458" height="92" rx="12" fill="#060706" fill-opacity=".78" stroke="#4ade80" stroke-opacity=".28"/>
+      <text x="96" y="303" font-family="JetBrains Mono,monospace" font-size="10" font-weight="700" letter-spacing="1.6" fill="#4ade80">01 / ENGINEERING</text>
+      <text x="96" y="332" font-size="17" font-weight="600" fill="#e4e2df">AI · Android · Linux · Tooling</text>
+      <text x="96" y="353" font-size="12" fill="#e4e2df" fill-opacity=".58">Build, inspect, test and document real systems</text>
     </g>
     <g>
-      <rect x="350" y="260" width="258" height="82" rx="12" fill="url(#card-fill)" stroke="#4ade80" stroke-opacity=".28"/>
-      <path d="M368 274H590" stroke="#4ade80" stroke-opacity=".22"/>
-      <text x="370" y="291" font-size="10" font-weight="700" fill="#4ade80" letter-spacing="2">LOCAL INFERENCE</text>
-      <text x="370" y="320" font-size="19" font-weight="700" fill="#e4e2df">ARM64 / GGUF</text>
+      <rect x="552" y="276" width="458" height="92" rx="12" fill="#060706" fill-opacity=".78" stroke="#4ade80" stroke-opacity=".2"/>
+      <text x="572" y="303" font-family="JetBrains Mono,monospace" font-size="10" font-weight="700" letter-spacing="1.6" fill="#4ade80">02 / DIGITAL SERVICES</text>
+      <text x="572" y="332" font-size="17" font-weight="600" fill="#e4e2df">Web · Software · Device support</text>
+      <text x="572" y="353" font-size="12" fill="#e4e2df" fill-opacity=".58">Practical solutions for people and small teams</text>
     </g>
     <g>
-      <rect x="624" y="260" width="258" height="82" rx="12" fill="url(#card-fill)" stroke="#4ade80" stroke-opacity=".28"/>
-      <path d="M642 274H864" stroke="#4ade80" stroke-opacity=".22"/>
-      <text x="644" y="291" font-size="10" font-weight="700" fill="#4ade80" letter-spacing="2">ENGINEERING STANDARD</text>
-      <text x="644" y="320" font-size="19" font-weight="700" fill="#e4e2df">EVIDENCE FIRST</text>
-    </g>
-    <g>
-      <rect x="918" y="250" width="606" height="102" rx="14" fill="url(#card-fill)" stroke="#4ade80" stroke-opacity=".24"/>
-      <text x="940" y="276" font-size="10" font-weight="700" fill="#4ade80" letter-spacing="2">PRACTICAL CAPABILITIES</text>
-      <text x="940" y="304" font-size="14" font-weight="700" fill="#e4e2df">WEB · SOFTWARE · ANDROID · COMPUTER SUPPORT</text>
-      <text x="940" y="328" font-size="14" font-weight="700" fill="#e4e2df">BUSINESS TECH · GRAPHICS · OFFICE / DATA WORK</text>
+      <rect x="1028" y="276" width="496" height="92" rx="12" fill="#060706" fill-opacity=".78" stroke="#4ade80" stroke-opacity=".2"/>
+      <text x="1048" y="303" font-family="JetBrains Mono,monospace" font-size="10" font-weight="700" letter-spacing="1.6" fill="#4ade80">03 / PROFESSIONAL SUPPORT</text>
+      <text x="1048" y="332" font-size="17" font-weight="600" fill="#e4e2df">Office · Data · Business workflows</text>
+      <text x="1048" y="353" font-size="12" fill="#e4e2df" fill-opacity=".58">Administration and technology-assisted work</text>
     </g>
   </g>
 
-  <g font-family="'Chakra Petch','Inter Display',Inter,Arial,sans-serif">
-    <text x="78" y="389" font-size="11" font-weight="700" fill="#4ade80" letter-spacing="2">ENGINEERING DELIVERY LOOP</text>
-    <path d="M92 418H1508" fill="none" stroke="#4ade80" stroke-opacity=".2" stroke-width="2"/>
-    <path class="workflow-line" d="M92 418H1508" fill="none" stroke="url(#green-line)" stroke-width="2.5"/>
-    <g class="workflow-step step-1"><circle cx="104" cy="418" r="7" fill="#07150D" stroke="#4ade80" stroke-width="2"/><circle cx="104" cy="418" r="2.5" fill="#4ade80"/><text x="92" y="447" font-size="11" font-weight="700" fill="#e4e2df">01  TERMUX + PROOT</text></g>
-    <g class="workflow-step step-2"><circle cx="426" cy="418" r="7" fill="#07150D" stroke="#4ade80" stroke-width="2"/><circle cx="426" cy="418" r="2.5" fill="#4ade80"/><text x="414" y="447" font-size="11" font-weight="700" fill="#e4e2df">02  GITHUB ACTIONS</text></g>
-    <g class="workflow-step step-3"><circle cx="748" cy="418" r="7" fill="#07150D" stroke="#4ade80" stroke-width="2"/><circle cx="748" cy="418" r="2.5" fill="#4ade80"/><text x="736" y="447" font-size="11" font-weight="700" fill="#e4e2df">03  ADB DEPLOY</text></g>
-    <g class="workflow-step step-4"><circle cx="1070" cy="418" r="7" fill="#07150D" stroke="#4ade80" stroke-width="2"/><circle cx="1070" cy="418" r="2.5" fill="#4ade80"/><text x="1058" y="447" font-size="11" font-weight="700" fill="#e4e2df">04  REAL DEVICE</text></g>
-    <g class="workflow-step step-5"><circle cx="1392" cy="418" r="7" fill="#07150D" stroke="#4ade80" stroke-width="2"/><circle cx="1392" cy="418" r="2.5" fill="#4ade80"/><text x="1380" y="447" font-size="11" font-weight="700" fill="#e4e2df">05  VERIFY</text></g>
-    <text x="78" y="490" font-size="12" font-weight="700" fill="#4ade80" letter-spacing="1">FAIL → FIX → REBUILD → DEPLOY → RETEST</text>
-    <text x="78" y="516" font-size="11" fill="#e4e2df" fill-opacity=".46">Built phone-first. Heavy compilation runs on CI. Hardware-dependent claims are checked on-device.</text>
-    <text x="1520" y="516" text-anchor="end" font-size="10" fill="#e4e2df" fill-opacity=".28">#050507 · #07150D · #22C55E · #4ADE80</text>
+  <g font-family="JetBrains Mono,monospace">
+    <text x="76" y="416" font-size="10" font-weight="700" letter-spacing="2.2" fill="#4ade80">A PRACTICAL DELIVERY CYCLE</text>
+    <path d="M92 454H1508" stroke="#4ade80" stroke-opacity=".18" stroke-width="2"/>
+    <path class="signal" d="M92 454H1508" fill="none" stroke="url(#line)" stroke-width="2.4"/>
+    <g class="pulse"><circle cx="104" cy="454" r="6" fill="#07150D" stroke="#4ade80" stroke-width="2"/><circle cx="104" cy="454" r="2" fill="#4ade80"/></g>
+    <g class="pulse p2"><circle cx="452" cy="454" r="6" fill="#07150D" stroke="#4ade80" stroke-width="2"/><circle cx="452" cy="454" r="2" fill="#4ade80"/></g>
+    <g class="pulse p3"><circle cx="800" cy="454" r="6" fill="#07150D" stroke="#4ade80" stroke-width="2"/><circle cx="800" cy="454" r="2" fill="#4ade80"/></g>
+    <g class="pulse p4"><circle cx="1148" cy="454" r="6" fill="#07150D" stroke="#4ade80" stroke-width="2"/><circle cx="1148" cy="454" r="2" fill="#4ade80"/></g>
+    <g font-size="11" fill="#e4e2df" fill-opacity=".78">
+      <text x="92" y="480">UNDERSTAND</text><text x="440" y="480">BUILD / SUPPORT</text><text x="788" y="480">TEST / CHECK</text><text x="1136" y="480">DELIVER / DOCUMENT</text>
+    </g>
+    <text x="76" y="535" font-family="Inter,Arial,sans-serif" font-size="12" fill="#e4e2df" fill-opacity=".52">Phone-first engineering · evidence-led claims · practical help for offices, individuals and businesses</text>
+    <text x="1524" y="535" text-anchor="end" font-size="10" fill="#e4e2df" fill-opacity=".32">#050507 · #07150D · #22C55E · #4ADE80</text>
   </g>
-  <rect x="1" y="1" width="1598" height="558" rx="26" fill="none" stroke="#e4e2df" stroke-opacity=".1"/>
+  <rect x="1" y="1" width="1598" height="588" rx="24" fill="none" stroke="#e4e2df" stroke-opacity=".1"/>
 </svg>
