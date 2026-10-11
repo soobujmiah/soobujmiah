@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="./assets/profile-banner.svg?v=3" alt="Sobuj Miah — Independent Software & AI Systems Engineer" width="100%" />
+  <img src="./assets/profile-banner.svg?v=4" alt="Sobuj Miah — Independent Software & AI Systems Engineer" width="100%" />
 </div>
 
 # Sobuj Miah
@@ -10,7 +10,7 @@ On-Device AI · Android · ARM64 Linux · Native Tooling · Software Systems
 I build systems close to the hardware: local LLM inference on ARM devices, consent-bound Android automation, native toolchains compiled from AOSP source, and Linux desktops running on phones. Self-taught, and built entirely from an Android phone (Termux / PRoot Debian, no PC) — heavy compilation routes through GitHub Actions, and every hardware-dependent claim is checked against one physical reference device before I call it done.
 
 <div align="center">
-  <img src="./assets/profile-stats.svg" alt="Five featured systems, documented tests, AOSP releases, canonical links and phone-first delivery loop" width="100%" />
+  <img src="./assets/profile-stats.svg?v=2" alt="Five featured systems, documented tests, AOSP releases, canonical links and phone-first delivery loop" width="100%" />
 </div>
 
 ## What I Build
@@ -72,7 +72,7 @@ Each repository documents what is **implemented and device-verified** separately
 ## Project Ecosystem
 
 <div align="center">
-  <img src="./assets/project-ecosystem.svg?v=2" alt="Project ecosystem: LAI, GGEN, ADT, Ternux and Songjog around a phone-first engineering workflow" width="100%" />
+  <img src="./assets/project-ecosystem.svg?v=3" alt="Project ecosystem: LAI, GGEN, ADT, Ternux and Songjog around a phone-first engineering workflow" width="100%" />
 </div>
 
 The projects are separate systems with complementary roles: **LAI** focuses on local AI and Android automation; **ADT** provides native ARM64 development tooling; **Ternux** provides the Linux-on-Android environment; **GGEN** and **Songjog** deliver user-facing applications. The common thread is the same build → deploy → measure → document loop.
