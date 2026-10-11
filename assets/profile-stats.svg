@@ -1,7 +1,18 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 430" role="img" aria-labelledby="title desc">
 <title id="title">Sobuj Miah engineering telemetry</title>
-<desc id="desc">Six featured systems, 590 documented tests across GGEN and Songjog, three AOSP toolchain releases, seventeen canonical links, one physical reference device, and four primary engineering domains.</desc>
+<desc id="desc">Five featured systems, 590 documented tests across GGEN and Songjog, three AOSP toolchain releases, seventeen canonical links, one physical reference device, and four primary engineering domains.</desc>
 <defs>
+ <style>
+  .metric-card{transform-box:fill-box;transform-origin:center;animation:cardDrift 7s ease-in-out infinite}
+  .metric-card:nth-of-type(2){animation-delay:-1.2s}.metric-card:nth-of-type(3){animation-delay:-2.4s}.metric-card:nth-of-type(4){animation-delay:-3.6s}
+  .loop-line{stroke-dasharray:8 18;animation:flow 12s linear infinite}
+  .loop-dot{transform-box:fill-box;transform-origin:center;animation:dotPulse 3.4s ease-in-out infinite}
+  @keyframes cardDrift{0%,100%{transform:translateY(0)}50%{transform:translateY(-2px)}}
+  @keyframes flow{to{stroke-dashoffset:-208}}
+  @keyframes dotPulse{0%,100%{opacity:.55;transform:scale(.85)}50%{opacity:1;transform:scale(1.25)}}
+  @media (prefers-reduced-motion:reduce){.metric-card,.loop-line,.loop-dot{animation:none}}
+ </style>
+
  <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#050507"/><stop offset=".55" stop-color="#07130c"/><stop offset="1" stop-color="#050507"/></linearGradient>
  <radialGradient id="g" cx="50%" cy="45%" r="70%"><stop stop-color="#22c55e" stop-opacity=".14"/><stop offset="1" stop-color="#050507" stop-opacity="0"/></radialGradient>
  <pattern id="p" width="40" height="40" patternUnits="userSpaceOnUse"><path d="M40 0H0V40" fill="none" stroke="#e4e2df" stroke-opacity=".035"/></pattern>
@@ -11,10 +22,10 @@
 <text x="42" y="82" font-family="Inter,Arial,sans-serif" font-size="26" font-weight="700" fill="#e4e2df">Systems, evidence &amp; delivery — not vanity metrics.</text>
 
 <g font-family="Inter,Arial,sans-serif">
- <g transform="translate(42 112)"><rect width="260" height="112" rx="14" fill="#060706" fill-opacity=".76" stroke="#e4e2df" stroke-opacity=".10"/><text x="20" y="30" font-size="11" fill="#4ade80" letter-spacing="2">FEATURED SYSTEMS</text><text x="20" y="76" font-size="42" font-weight="700" fill="#e4e2df">06</text><text x="104" y="59" font-size="9.5" fill="#e4e2df" fill-opacity=".55">ACTIVE</text><text x="104" y="74" font-size="9.5" fill="#e4e2df" fill-opacity=".55">EVIDENCE-BACKED</text><text x="104" y="89" font-size="9.5" fill="#e4e2df" fill-opacity=".55">PROJECTS</text></g>
- <g transform="translate(322 112)"><rect width="260" height="112" rx="14" fill="#060706" fill-opacity=".76" stroke="#e4e2df" stroke-opacity=".10"/><text x="20" y="30" font-size="11" fill="#4ade80" letter-spacing="2">DOCUMENTED TESTS</text><text x="20" y="76" font-size="42" font-weight="700" fill="#e4e2df">590</text><text x="116" y="68" font-size="12" fill="#e4e2df" fill-opacity=".55">GGEN +</text><text x="116" y="87" font-size="12" fill="#e4e2df" fill-opacity=".55">SONGJOG</text></g>
- <g transform="translate(602 112)"><rect width="260" height="112" rx="14" fill="#060706" fill-opacity=".76" stroke="#e4e2df" stroke-opacity=".10"/><text x="20" y="30" font-size="11" fill="#4ade80" letter-spacing="2">AOSP RELEASES</text><text x="20" y="76" font-size="42" font-weight="700" fill="#e4e2df">03</text><text x="104" y="68" font-size="12" fill="#e4e2df" fill-opacity=".55">ADT</text><text x="104" y="87" font-size="12" fill="#e4e2df" fill-opacity=".55">V35 → V37</text></g>
- <g transform="translate(882 112)"><rect width="260" height="112" rx="14" fill="#060706" fill-opacity=".76" stroke="#e4e2df" stroke-opacity=".10"/><text x="20" y="30" font-size="11" fill="#4ade80" letter-spacing="2">CANONICAL LINKS</text><text x="20" y="76" font-size="42" font-weight="700" fill="#e4e2df">17</text><text x="104" y="68" font-size="12" fill="#e4e2df" fill-opacity=".55">IDENTITY</text><text x="104" y="87" font-size="12" fill="#e4e2df" fill-opacity=".55">LINKS</text></g>
+ <g class="metric-card" transform="translate(42 112)"><rect width="260" height="112" rx="14" fill="#060706" fill-opacity=".76" stroke="#e4e2df" stroke-opacity=".10"/><text x="20" y="30" font-size="11" fill="#4ade80" letter-spacing="2">FEATURED SYSTEMS</text><text x="20" y="76" font-size="42" font-weight="700" fill="#e4e2df">05</text><text x="104" y="59" font-size="9.5" fill="#e4e2df" fill-opacity=".55">FEATURED</text><text x="104" y="74" font-size="9.5" fill="#e4e2df" fill-opacity=".55">EVIDENCE-BACKED</text><text x="104" y="89" font-size="9.5" fill="#e4e2df" fill-opacity=".55">PROJECTS</text></g>
+ <g class="metric-card" transform="translate(322 112)"><rect width="260" height="112" rx="14" fill="#060706" fill-opacity=".76" stroke="#e4e2df" stroke-opacity=".10"/><text x="20" y="30" font-size="11" fill="#4ade80" letter-spacing="2">DOCUMENTED TESTS</text><text x="20" y="76" font-size="42" font-weight="700" fill="#e4e2df">590</text><text x="116" y="68" font-size="12" fill="#e4e2df" fill-opacity=".55">GGEN +</text><text x="116" y="87" font-size="12" fill="#e4e2df" fill-opacity=".55">SONGJOG</text></g>
+ <g class="metric-card" transform="translate(602 112)"><rect width="260" height="112" rx="14" fill="#060706" fill-opacity=".76" stroke="#e4e2df" stroke-opacity=".10"/><text x="20" y="30" font-size="11" fill="#4ade80" letter-spacing="2">AOSP RELEASES</text><text x="20" y="76" font-size="42" font-weight="700" fill="#e4e2df">03</text><text x="104" y="68" font-size="12" fill="#e4e2df" fill-opacity=".55">ADT</text><text x="104" y="87" font-size="12" fill="#e4e2df" fill-opacity=".55">V35 → V37</text></g>
+ <g class="metric-card" transform="translate(882 112)"><rect width="260" height="112" rx="14" fill="#060706" fill-opacity=".76" stroke="#e4e2df" stroke-opacity=".10"/><text x="20" y="30" font-size="11" fill="#4ade80" letter-spacing="2">CANONICAL LINKS</text><text x="20" y="76" font-size="42" font-weight="700" fill="#e4e2df">17</text><text x="104" y="68" font-size="12" fill="#e4e2df" fill-opacity=".55">IDENTITY</text><text x="104" y="87" font-size="12" fill="#e4e2df" fill-opacity=".55">LINKS</text></g>
 </g>
 
 <g transform="translate(42 252)" font-family="JetBrains Mono,monospace">
@@ -23,8 +34,8 @@
  <g font-size="13" fill="#e4e2df" fill-opacity=".72">
   <text x="22" y="65">01  TERMUX + PROOT</text><text x="244" y="65">02  GITHUB ACTIONS</text><text x="493" y="65">03  ADB DEPLOY</text><text x="700" y="65">04  REAL DEVICE</text><text x="900" y="65">05  RETEST</text>
  </g>
- <path d="M30 84H1086" stroke="#22c55e" stroke-opacity=".25"/>
- <circle cx="110" cy="84" r="3" fill="#4ade80"/><circle cx="325" cy="84" r="3" fill="#4ade80"/><circle cx="540" cy="84" r="3" fill="#4ade80"/><circle cx="755" cy="84" r="3" fill="#4ade80"/><circle cx="970" cy="84" r="3" fill="#4ade80"/>
+ <path class="loop-line" d="M30 84H1086" stroke="#22c55e" stroke-opacity=".45"/>
+ <circle class="loop-dot" cx="110" cy="84" r="3" fill="#4ade80"/><circle class="loop-dot" cx="325" cy="84" r="3" fill="#4ade80"/><circle class="loop-dot" cx="540" cy="84" r="3" fill="#4ade80"/><circle class="loop-dot" cx="755" cy="84" r="3" fill="#4ade80"/><circle class="loop-dot" cx="970" cy="84" r="3" fill="#4ade80"/>
  <text x="22" y="108" font-size="11" fill="#e4e2df" fill-opacity=".42">FAIL → FIX → REBUILD → DEPLOY → VERIFY · hardware-dependent claims are checked before shipping</text>
  </g>
 <rect x="1" y="1" width="1198" height="428" rx="20" fill="none" stroke="#e4e2df" stroke-opacity=".09"/>
