@@ -1,50 +1,79 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 660" role="img" aria-labelledby="title desc">
-  <title id="title">Sobuj Miah project ecosystem</title>
-  <desc id="desc">Architecture map connecting LAI, GGEN, ADT, Ternux and Songjog around a phone-first engineering workflow.</desc>
+  <title id="title">Sobuj Miah — Project ecosystem</title>
+  <desc id="desc">Five distinct projects connect to a shared phone-first build-and-verify workflow. LAI, GGEN, Songjog, ADT, and Ternux each have a clear connector that terminates at the edge of the project card and the central workflow hub.</desc>
   <style>
-    .flow{stroke-dasharray:9 15;animation:signalFlow 10s linear infinite}
-    .node{transform-box:fill-box;transform-origin:center;animation:nodeFloat 6.5s ease-in-out infinite}
-    .node:nth-of-type(2){animation-delay:-1.3s}.node:nth-of-type(3){animation-delay:-2.6s}.node:nth-of-type(4){animation-delay:-3.9s}.node:nth-of-type(5){animation-delay:-5.2s}
-    @keyframes signalFlow{to{stroke-dashoffset:-240}}
-    @keyframes nodeFloat{0%,100%{transform:translateY(0)}50%{transform:translateY(-2px)}}
-    @media (prefers-reduced-motion:reduce){.flow,.node{animation:none}}
+    .signal-path{stroke-dasharray:8 13;animation:signal-flow 10s linear infinite}
+    .signal-path:nth-of-type(2){animation-delay:-2s}.signal-path:nth-of-type(3){animation-delay:-4s}.signal-path:nth-of-type(4){animation-delay:-6s}.signal-path:nth-of-type(5){animation-delay:-8s}
+    @keyframes signal-flow{to{stroke-dashoffset:-210}}
+    @media (prefers-reduced-motion:reduce){.signal-path{animation:none}}
   </style>
   <defs>
-    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#050507"/><stop offset="0.5" stop-color="#07150d"/><stop offset="1" stop-color="#050507"/></linearGradient>
-    <linearGradient id="line" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#10b981" stop-opacity="0.15"/><stop offset="0.5" stop-color="#4ade80" stop-opacity="0.85"/><stop offset="1" stop-color="#10b981" stop-opacity="0.15"/></linearGradient>
-    <filter id="glow"><feGaussianBlur stdDeviation="6"/></filter>
-    <pattern id="grid" width="56" height="56" patternUnits="userSpaceOnUse"><path d="M56 0H0V56" fill="none" stroke="#e4e2df" stroke-opacity="0.03"/></pattern>
+    <linearGradient id="ecosystem-bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#050507"/><stop offset=".52" stop-color="#07150D"/><stop offset="1" stop-color="#050507"/></linearGradient>
+    <linearGradient id="connector" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#10b981" stop-opacity=".25"/><stop offset=".5" stop-color="#4ade80" stop-opacity=".9"/><stop offset="1" stop-color="#10b981" stop-opacity=".25"/></linearGradient>
+    <radialGradient id="hub-glow"><stop stop-color="#22c55e" stop-opacity=".2"/><stop offset="1" stop-color="#22c55e" stop-opacity="0"/></radialGradient>
+    <pattern id="ecosystem-grid" width="56" height="56" patternUnits="userSpaceOnUse"><path d="M56 0H0V56" fill="none" stroke="#e4e2df" stroke-opacity=".028"/></pattern>
   </defs>
-  <rect width="1600" height="660" rx="26" fill="url(#bg)"/>
-  <rect width="1600" height="620" rx="26" fill="url(#grid)"/>
-  <text x="70" y="70" font-family="JetBrains Mono,monospace" font-size="15" letter-spacing="4" fill="#4ade80">PROJECT ECOSYSTEM / ENGINEERING MAP</text>
-  <text x="70" y="105" font-family="JetBrains Mono,monospace" font-size="13" fill="#e4e2df" fill-opacity="0.55">ONE PHONE · SHARED EVIDENCE LOOP · DISTINCT SYSTEM ROLES</text>
-
-  <g class="flow" fill="none" stroke="url(#line)" stroke-width="2">
-    <path d="M800 310 C650 220 500 190 310 180"/>
-    <path d="M800 310 C650 310 510 310 310 310"/>
-    <path d="M800 310 C650 390 500 430 310 440"/>
-    <path d="M800 310 C950 220 1100 190 1290 180"/>
-    <path d="M800 310 C950 310 1090 310 1290 310"/>
-
+  <rect width="1600" height="660" rx="26" fill="url(#ecosystem-bg)"/>
+  <rect width="1600" height="660" rx="26" fill="url(#ecosystem-grid)"/>
+  <g font-family="JetBrains Mono,monospace">
+    <text x="70" y="65" font-size="14" font-weight="700" letter-spacing="3" fill="#4ade80">PROJECT ECOSYSTEM / ENGINEERING MAP</text>
+    <text x="70" y="94" font-size="12" fill="#e4e2df" fill-opacity=".58">FIVE PROJECTS · ONE SHARED BUILD / DEPLOY / VERIFY LOOP</text>
   </g>
-  <g fill="#22c55e" fill-opacity="0.14" filter="url(#glow)"><circle cx="800" cy="310" r="54"/></g>
-  <circle cx="800" cy="310" r="38" fill="#07150d" stroke="#4ade80" stroke-opacity="0.65" stroke-width="2"/>
-  <text x="800" y="304" text-anchor="middle" font-family="JetBrains Mono,monospace" font-size="15" font-weight="700" fill="#e4e2df">PHONE-FIRST</text>
-  <text x="800" y="326" text-anchor="middle" font-family="JetBrains Mono,monospace" font-size="10" letter-spacing="2" fill="#4ade80">BUILD + VERIFY</text>
+
+  <!-- Connectors meet the central hub boundary and the project-card edges. -->
+  <g fill="none" stroke="url(#connector)" stroke-width="2" stroke-linecap="round">
+    <path class="signal-path" d="M766 290 C700 255 628 202 520 181"/>
+    <path class="signal-path" d="M762 320 C680 320 620 320 520 320"/>
+    <path class="signal-path" d="M766 350 C700 385 628 444 520 459"/>
+    <path class="signal-path" d="M834 294 C900 270 978 248 1080 248"/>
+    <path class="signal-path" d="M834 346 C900 370 978 392 1080 392"/>
+  </g>
+
+  <g>
+    <circle cx="800" cy="320" r="88" fill="url(#hub-glow)"/>
+    <circle cx="800" cy="320" r="57" fill="#07150D" stroke="#4ade80" stroke-opacity=".72" stroke-width="2"/>
+    <circle cx="800" cy="320" r="48" fill="none" stroke="#4ade80" stroke-opacity=".16"/>
+    <text x="800" y="309" text-anchor="middle" font-family="JetBrains Mono,monospace" font-size="14" font-weight="700" fill="#e4e2df">PHONE-FIRST</text>
+    <text x="800" y="332" text-anchor="middle" font-family="JetBrains Mono,monospace" font-size="10" letter-spacing="1.5" fill="#4ade80">BUILD + VERIFY</text>
+  </g>
 
   <g font-family="JetBrains Mono,monospace">
-    <g class="node"><rect x="110" y="140" width="400" height="82" rx="14" fill="#060706" stroke="#4ade80" stroke-opacity="0.24"/><text x="135" y="172" font-size="17" fill="#4ade80">LAI</text><text x="135" y="198" font-size="11" fill="#e4e2df" fill-opacity="0.62">LOCAL AI · ANDROID AUTOMATION · INFERENCE</text></g>
-    <g class="node"><rect x="110" y="270" width="400" height="82" rx="14" fill="#060706" stroke="#4ade80" stroke-opacity="0.24"/><text x="135" y="302" font-size="17" fill="#4ade80">GGEN</text><text x="135" y="328" font-size="11" fill="#e4e2df" fill-opacity="0.62">CREATIVE + DOCUMENT STUDIO · DART CORE</text></g>
-    <g class="node"><rect x="110" y="400" width="400" height="82" rx="14" fill="#060706" stroke="#4ade80" stroke-opacity="0.24"/><text x="135" y="432" font-size="17" fill="#4ade80">SONGJOG</text><text x="135" y="458" font-size="11" fill="#e4e2df" fill-opacity="0.62">BANGLA-FIRST BUSINESS + INSTITUTION OPERATIONS</text></g>
-    <g class="node"><rect x="1090" y="140" width="400" height="82" rx="14" fill="#060706" stroke="#4ade80" stroke-opacity="0.24"/><text x="1115" y="172" font-size="17" fill="#4ade80">ADT</text><text x="1115" y="198" font-size="11" fill="#e4e2df" fill-opacity="0.62">AOSP NATIVE ARM64 TOOLCHAIN · OFFLINE ARTIFACTS</text></g>
-    <g class="node"><rect x="1090" y="270" width="400" height="82" rx="14" fill="#060706" stroke="#4ade80" stroke-opacity="0.24"/><text x="1115" y="302" font-size="17" fill="#4ade80">TERNuX</text><text x="1115" y="328" font-size="11" fill="#e4e2df" fill-opacity="0.62">NO-ROOT DEBIAN/XFCE · GPU ROUTES · DOCTOR TOOLS</text></g>
-
+    <g>
+      <rect x="70" y="140" width="450" height="82" rx="13" fill="#060907" stroke="#4ade80" stroke-opacity=".3"/>
+      <rect x="70" y="140" width="4" height="82" rx="2" fill="#4ade80" fill-opacity=".8"/>
+      <text x="94" y="171" font-size="17" font-weight="700" fill="#4ade80">LAI</text>
+      <text x="94" y="197" font-size="11" fill="#e4e2df" fill-opacity=".7">LOCAL AI · ANDROID AUTOMATION · INFERENCE</text>
+    </g>
+    <g>
+      <rect x="70" y="279" width="450" height="82" rx="13" fill="#060907" stroke="#4ade80" stroke-opacity=".3"/>
+      <rect x="70" y="279" width="4" height="82" rx="2" fill="#4ade80" fill-opacity=".8"/>
+      <text x="94" y="310" font-size="17" font-weight="700" fill="#4ade80">GGEN</text>
+      <text x="94" y="336" font-size="11" fill="#e4e2df" fill-opacity=".7">CREATIVE + DOCUMENT STUDIO · DART CORE</text>
+    </g>
+    <g>
+      <rect x="70" y="418" width="450" height="82" rx="13" fill="#060907" stroke="#4ade80" stroke-opacity=".3"/>
+      <rect x="70" y="418" width="4" height="82" rx="2" fill="#4ade80" fill-opacity=".8"/>
+      <text x="94" y="449" font-size="17" font-weight="700" fill="#4ade80">Songjog</text>
+      <text x="94" y="475" font-size="11" fill="#e4e2df" fill-opacity=".7">BANGLA-FIRST BUSINESS + INSTITUTION OPERATIONS</text>
+    </g>
+    <g>
+      <rect x="1080" y="207" width="450" height="82" rx="13" fill="#060907" stroke="#4ade80" stroke-opacity=".3"/>
+      <rect x="1080" y="207" width="4" height="82" rx="2" fill="#4ade80" fill-opacity=".8"/>
+      <text x="1104" y="238" font-size="17" font-weight="700" fill="#4ade80">ADT</text>
+      <text x="1104" y="264" font-size="11" fill="#e4e2df" fill-opacity=".7">AOSP NATIVE ARM64 TOOLCHAIN · OFFLINE ARTIFACTS</text>
+    </g>
+    <g>
+      <rect x="1080" y="351" width="450" height="82" rx="13" fill="#060907" stroke="#4ade80" stroke-opacity=".3"/>
+      <rect x="1080" y="351" width="4" height="82" rx="2" fill="#4ade80" fill-opacity=".8"/>
+      <text x="1104" y="382" font-size="17" font-weight="700" fill="#4ade80">Ternux</text>
+      <text x="1104" y="408" font-size="11" fill="#e4e2df" fill-opacity=".7">NO-ROOT DEBIAN / XFCE · GPU ROUTES · DOCTOR TOOLS</text>
+    </g>
   </g>
 
-  <rect x="70" y="590" width="1460" height="1" fill="url(#line)"/>
-  <g font-family="JetBrains Mono,monospace" font-size="11" letter-spacing="2" fill="#e4e2df" fill-opacity="0.45">
-    <text x="70" y="615">TERMUX / PROOT</text><text x="340" y="615">GITHUB ACTIONS</text><text x="620" y="615">ADB</text><text x="810" y="615">REAL DEVICE</text><text x="1010" y="615">MEASURE</text><text x="1190" y="615">DOCUMENT</text><text x="1370" y="615">REPEAT</text>
+  <path d="M70 552H1530" stroke="#4ade80" stroke-opacity=".24"/>
+  <g font-family="JetBrains Mono,monospace" font-size="10.5" fill="#e4e2df" fill-opacity=".62" text-anchor="middle">
+    <text x="155" y="580">TERMUX / PROOT</text><text x="405" y="580">GITHUB ACTIONS</text><text x="655" y="580">ADB DEPLOY</text><text x="905" y="580">REAL DEVICE</text><text x="1155" y="580">MEASURE</text><text x="1405" y="580">DOCUMENT</text>
   </g>
-  <rect x="1" y="1" width="1598" height="618" rx="26" fill="none" stroke="#e4e2df" stroke-opacity="0.09"/>
+  <text x="800" y="620" text-anchor="middle" font-family="Inter,Arial,sans-serif" font-size="12" fill="#e4e2df" fill-opacity=".42">Each project has a distinct role; evidence flows through the same repeatable engineering process.</text>
+  <rect x="1" y="1" width="1598" height="658" rx="26" fill="none" stroke="#e4e2df" stroke-opacity=".1"/>
 </svg>
